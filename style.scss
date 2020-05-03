@@ -138,3 +138,72 @@ body{
         }
     }
 }
+
+#awards{  
+    height: 408px;
+    background-color: rgba(211, 211, 211, 1);
+    .inner-awards{
+        height: 408px;
+        background: url(./images/awards/background_img.svg) no-repeat;
+    }
+    .layer{
+        display: flex;
+        flex-direction: row;
+        height: 408px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .award{
+        display: flex;
+
+        img{
+            margin-right: 15px; 
+        }
+    }
+
+    button{
+        color: #FF0e0e;
+        border: 1px solid #FF0e0e;
+        background: none;
+        width: 11.45px;
+        height: 11.45px;
+        font-size: 9px;
+        padding: 0px;
+    }
+}
+
+#featured{
+    .feature-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+#about-us{
+    background-color: rgba(211, 211, 211, 1);
+    height: 430px;
+    
+    .about-main{
+        height: 430px;
+        background: url('./images/about_us/background_img.svg');
+        display: flex;
+    }
+    .container{
+        display: flex;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about{
+        width: 455px;
+    }
+    img{
+        position: absolute;
+        align-self: center;
+        left: 45%;
+    }
+}
