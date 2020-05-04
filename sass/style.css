@@ -158,4 +158,11 @@ body {
     align-self: center;
     left: 45%; }
 
+#instagram .collection {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+#instagram .first-row {
+  display: flex; }
+
 /*# sourceMappingURL=style.css.map */

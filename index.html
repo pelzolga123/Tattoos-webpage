@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sass/style.css" />
 </head>  
 
 <body>
@@ -184,15 +184,111 @@
     </section>
 
     <section id="instagram">
-        <h2>INSTAGRAM COLLECTIVE WORK</h2>
+        <div class="collection">
+           <div class="first-row">
+             <div class="big-col">
+             <img src="./images/instagram/1-1-big.svg"/>
+            </div>
+
+            <div class="small-col">
+                <img src="./images/instagram/1-2-small.svg"/>
+                <img src="./images/instagram/1-3-small.svg"/>
+                <img src="./images/instagram/1-4-small.svg"/>
+                <img src="./images/instagram/2-2-small.svg"/>
+                <img src="./images/instagram/2-3-small.svg"/>
+                <img src="./images/instagram/2-4-small.svg"/>   
+            </div>
+           </div>
+
+           <div class="first-row">
+           <div class="small-col">
+               <img src="./images/instagram/3-1-small.svg"/>
+               <img src="./images/instagram/3-2-small.svg"/>
+               <img src="./images/instagram/3-3-small.svg"/>
+               <img src="./images/instagram/4-1-small.svg"/>
+               <img src="./images/instagram/4-2-small.svg"/>
+               <img src="./images/instagram/4-3-small.svg"/>   
+           </div>
+
+           <div class="big-col">
+            <img src="./images/instagram/2-4-big.svg"/>
+           </div>
+          </div>
+        </div>
+
     </section>
 
     <section id="contact">
+      <h2>CONTACT FORM</h2>
+      <form>
+        <label for="email">e-mail *</label>
+        <input type="email" id="email" value="Enter your name" required/>
+        <label for="artist-option">pick your artist</label>
+        <select id="artist-option">
+          <option value="svetlyo">Svetlyo</option>
+          <option value="renette">Renette</option>
+          <option value="dave">Dave</option>
+          <option value="kayla">Kayla</option>
+        </select>
 
+        <label for="message">message *</label>
+        <input type="text" id="message" value="Tell us about your idea" required/>
+        <div>
+          <input type="file" />
+          <input type="file" />
+          <input type="file" />
+        </div>
+
+        <button>CONTACT US <span class="plus">+</span></button>
+      </form>
+
+      <div>
+        <div>
+          <h4>OPENING HOURS:</h4>
+          <p>Mon-Fri: 12am-8pm</p>
+          <p>Sunday: 12pm-8pm</p>
+        </div>
+
+        <div>
+          <h4>ADRESS:</h4>
+          <p>228 Columbus Ave, San Francisco</p>
+          <p>California, 94133</p>
+        </div>
+
+        <div>
+          <h4>E-MAIL:</h4>
+          <p>info@dream-masters.com</p>
+        </div>
+
+        <div>
+          <h4>PHONE:</h4>
+          <p>(415) 277-7204</p>
+        </div>
+
+        <div class="social-icons">
+          <img src="./images/fb_home.svg"/>
+          <img src="./images/instagram_home.svg"/>
+        </div>
+      </div>
+
+      <img src="./images/map.svg"/>
     </section>
 
     <footer>
-        
+      <ul>
+        <li><a>Home</a></li>
+        <li><a>New! Tattoo supplies</a></li>
+        <li><a>Artists</a></li>
+        <li><a>About us</a></li>
+        <li><a>Services</a></li>
+        <li><a>360 tour</a></li>
+        <li><a>Featured work</a></li>
+        <li><a>Aftercare</a></li>
+        <li><a>FAQ</a></li>
+        <li><a class="contact-a">Contact</a></li>
+    </ul>
     </footer>
+
+    <script src="./js/isotope.pkgd.min.js"></script>
 </body>
 </html>
