@@ -181,12 +181,38 @@ body {
   display: flex; }
 
 #contact {
-  width: 80%;
+  width: 1134px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  margin-bottom: 80px; }
   #contact form {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-bottom: 80px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; }
+    #contact form .upload {
+      display: flex; }
+      #contact form .upload .upload-btn {
+        overflow: hidden;
+        white-space: nowrap;
+        position: absolute;
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        width: 1px; }
+      #contact form .upload .upload-btn + label {
+        display: inline-block; }
+      #contact form .upload label {
+        cursor: pointer;
+        background: url(../images/upload.svg) no-repeat;
+        background-position: 120px;
+        padding: 40px;
+        font-family: Raleway;
+        font-size: 15px;
+        letter-spacing: 0.01em;
+        color: #F6F6F6; }
     #contact form input {
       background: none;
       border-bottom: 1px solid white;
@@ -194,11 +220,64 @@ body {
       border-right: none;
       border-left: none;
       padding: 20px; }
+    #contact form button {
+      color: #d8d8d9;
+      border: 2px solid #d8d8d9;
+      box-sizing: border-box;
+      font-family: Raleway;
+      font-weight: 600;
+      font-size: 16px;
+      background: none;
+      line-height: 19px;
+      width: 180px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 41px;
+      margin-right: 3px;
+      align-self: center; }
+      #contact form button .plus {
+        font-size: 34px;
+        line-height: 40px;
+        font-weight: 300;
+        margin-left: 12px; }
   #contact .map-section {
     display: flex;
     justify-content: space-between;
     height: 317px;
     background-color: #C4C4C4; }
+    #contact .map-section .social-icons {
+      width: 22%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px; }
+      #contact .map-section .social-icons img {
+        width: 20px; }
+    #contact .map-section .map-info {
+      width: 26%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px; }
+      #contact .map-section .map-info div {
+        margin-top: 12px; }
+    #contact .map-section h4 {
+      font-family: Playfair Display SC;
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 0.01em;
+      margin: 0;
+      color: #1D1C21; }
+    #contact .map-section p {
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+      margin: 0;
+      color: #1D1C21; }
 
 .footer {
   width: 1134px;
