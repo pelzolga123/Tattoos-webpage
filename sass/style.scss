@@ -176,6 +176,12 @@ body{
 }
 
 #featured{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    .featured-main{
+        display: flex;
+    }
     .feature-header{
         display: flex;
         justify-content: space-between;
@@ -214,7 +220,106 @@ body{
         margin-left: auto;
         margin-right: auto;
     }
-    .first-row{
+    .small-col{
+        display: flex;
+        flex-wrap: wrap;
+        img{
+            margin-left: 9px;
+            margin-bottom: 10px;
+        }
+    }
+    .second-row{
+        img{
+            margin-right: 9px;
+            margin-left: 0;
+        }
+    }
+    .first-row, .second-row{
         display: flex;
     }
 }
+
+#contact{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    form{
+        display: flex;
+        flex-direction: column;
+        input{
+            background: none;
+            border-bottom: 1px solid white;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            padding: 20px;
+        }
+    }
+    .map-section{
+        display: flex;
+        justify-content: space-between; 
+        height: 317px;
+        background-color: #C4C4C4;
+
+        h4{
+            font-family: Playfair Display SC;
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+        }
+    }
+
+
+    .footer{      
+        width: 1134px;
+        margin-left: auto;
+        margin-right: auto;
+
+        ul{
+            border-bottom: 1px solid #F6F6F6;
+            border-top: 1px solid #F6F6F6;
+            font-family: Raleway;
+            font-style: normal;
+            list-style: none;
+            color: #F6F6F6;
+            font-size: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0;
+            margin-bottom: 10px;
+            padding: 20px 0;
+
+            a{
+                letter-spacing: 0.01em;
+            }
+            .contact-a{
+               color: #FD0000;
+            }
+        }
+
+        .footer-bottom{
+            color: #89898B;
+            font-size: 13px;
+            font-family: Raleway;
+            font-style: normal;
+            display: flex;
+            justify-content: space-between;
+            p {
+                letter-spacing: 0.01em;
+                margin: 9px 0;
+            }
+            .social-icons{
+                display: flex;
+                width: 60px;
+                justify-content: space-between;
+                img{
+                    width: 15px;
+                }
+            }
+
+        
+        }
+    }

@@ -134,10 +134,16 @@ body {
     font-size: 9px;
     padding: 0px; }
 
-#featured .feature-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline; }
+#featured {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+  #featured .featured-main {
+    display: flex; }
+  #featured .feature-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; }
 
 #about-us {
   background-color: lightgray;
@@ -162,7 +168,75 @@ body {
   width: 80%;
   margin-left: auto;
   margin-right: auto; }
-#instagram .first-row {
+#instagram .small-col {
+  display: flex;
+  flex-wrap: wrap; }
+  #instagram .small-col img {
+    margin-left: 9px;
+    margin-bottom: 10px; }
+#instagram .second-row img {
+  margin-right: 9px;
+  margin-left: 0; }
+#instagram .first-row, #instagram .second-row {
   display: flex; }
+
+#contact {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto; }
+  #contact form {
+    display: flex;
+    flex-direction: column; }
+    #contact form input {
+      background: none;
+      border-bottom: 1px solid white;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      padding: 20px; }
+  #contact .map-section {
+    display: flex;
+    justify-content: space-between;
+    height: 317px;
+    background-color: #C4C4C4; }
+
+.footer {
+  width: 1134px;
+  margin-left: auto;
+  margin-right: auto; }
+  .footer ul {
+    border-bottom: 1px solid #F6F6F6;
+    border-top: 1px solid #F6F6F6;
+    font-family: Raleway;
+    font-style: normal;
+    list-style: none;
+    color: #F6F6F6;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 10px;
+    padding: 20px 0; }
+    .footer ul a {
+      letter-spacing: 0.01em; }
+    .footer ul .contact-a {
+      color: #FD0000; }
+  .footer .footer-bottom {
+    color: #89898B;
+    font-size: 13px;
+    font-family: Raleway;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between; }
+    .footer .footer-bottom p {
+      letter-spacing: 0.01em;
+      margin: 9px 0; }
+    .footer .footer-bottom .social-icons {
+      display: flex;
+      width: 60px;
+      justify-content: space-between; }
+      .footer .footer-bottom .social-icons img {
+        width: 15px; }
 
 /*# sourceMappingURL=style.css.map */
