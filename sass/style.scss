@@ -350,7 +350,31 @@ body{
 #about-us{
     background-color: rgba(211, 211, 211, 1);
     height: 430px;
-    
+    h2{
+        font-family: Playfair Display SC;
+        font-weight: 900;
+        font-size: 55px;
+        letter-spacing: 0.05em;
+        color: #89898B;
+        margin: 0;
+    }
+
+    p {
+        font-family: Raleway;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+        color: #1D1C21;
+        margin: 0;
+    }
+    .paragraphs{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3px;
+        .paragraph-1{
+            padding: 18px 0;
+        }
+    }
     .about-main{
         height: 430px;
         background: url('../images/about_us/background_img.svg');
@@ -358,17 +382,20 @@ body{
     }
     .container{
         display: flex;
-        width: 80%;
+        width: 1134px;
         margin-left: auto;
         margin-right: auto;
     }
     .about{
         width: 455px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     img{
         position: absolute;
         align-self: center;
-        left: 45%;
+        left: 632px;
     }
 }
 
