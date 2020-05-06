@@ -313,26 +313,67 @@ body {
     left: 632px; }
 
 #instagram .collection {
-  width: 80%;
+  width: 1134px;
   margin-left: auto;
   margin-right: auto; }
+#instagram h2 {
+  font-family: Playfair Display SC;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 81px;
+  color: #89898B;
+  text-align: center;
+  margin-top: 84px;
+  margin-bottom: 22px;
+  letter-spacing: 0.02em; }
 #instagram .small-col {
   display: flex;
   flex-wrap: wrap; }
   #instagram .small-col img {
-    margin-left: 9px;
+    margin-left: 11px;
     margin-bottom: 10px; }
-#instagram .second-row img {
-  margin-right: 9px;
+#instagram .second-row .small-col img {
+  margin-right: 11px;
+  margin-left: 0px; }
+#instagram .second-row .big-col img {
   margin-left: 0; }
 #instagram .first-row, #instagram .second-row {
   display: flex; }
+#instagram .show-btn {
+  width: 97px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px; }
+  #instagram .show-btn span {
+    font-family: Raleway;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #F6F6F6; }
+  #instagram .show-btn button {
+    color: #FF0e0e;
+    border: 1px solid #FF0e0e;
+    background: none;
+    width: 11.45px;
+    height: 11.45px;
+    font-size: 9px;
+    padding: 0px;
+    margin-left: 3px;
+    margin-bottom: 2px; }
 
 #contact {
   width: 1134px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 80px; }
+  #contact h3 {
+    font-family: Playfair Display SC;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #F6F6F6; }
   #contact form {
     display: flex;
     flex-direction: column;

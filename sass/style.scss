@@ -401,26 +401,70 @@ body{
 
 #instagram{
     .collection{
-        width: 80%;
+        width: 1134px;
         margin-left: auto;
         margin-right: auto;
+    }
+    h2{
+        font-family: Playfair Display SC;
+        font-weight: 900;
+        font-size: 56px;
+        line-height: 81px;
+        color: #89898B;
+        text-align: center;
+        margin-top: 84px;
+        margin-bottom: 22px;
+        letter-spacing: 0.02em;
     }
     .small-col{
         display: flex;
         flex-wrap: wrap;
         img{
-            margin-left: 9px;
+            margin-left: 11px;
             margin-bottom: 10px;
         }
     }
     .second-row{
-        img{
-            margin-right: 9px;
-            margin-left: 0;
+        .small-col{
+            img{
+            margin-right: 11px;
+            margin-left: 0px;
+            }
+        }
+        .big-col{
+            img{
+                margin-left: 0;
+            }
         }
     }
     .first-row, .second-row{
         display: flex;
+    }
+
+    .show-btn{
+        width: 97px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        span{
+            font-family: Raleway;
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 0.01em;
+            color: #F6F6F6;
+        }
+
+        button{
+            color: #FF0e0e;
+            border: 1px solid #FF0e0e;
+            background: none;
+            width: 11.45px;
+            height: 11.45px;
+            font-size: 9px;
+            padding: 0px;
+            margin-left: 3px;
+            margin-bottom: 2px
+        }
     }
 }
 
@@ -429,6 +473,16 @@ body{
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 80px;
+    h3{
+        font-family: Playfair Display SC;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #F6F6F6;
+
+    }
     form{
         display: flex;
         flex-direction: column;
