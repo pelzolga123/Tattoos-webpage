@@ -473,6 +473,8 @@ body{
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 80px;
+    margin-top: 81px;
+
     h3{
         font-family: Playfair Display SC;
         font-weight: 900;
@@ -481,19 +483,29 @@ body{
         text-align: center;
         letter-spacing: 0.01em;
         color: #F6F6F6;
+        margin-bottom: 19px;
 
+    }
+    label{
+        font-family: Raleway;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+        color: #F6F6F6;
     }
     form{
         display: flex;
         flex-direction: column;
         margin-bottom: 80px;
-        width: 50%;
+        width: 540px;
         margin-left: auto;
         margin-right: auto;
-
+        margin-bottom: 19px;
 
         .upload{
             display: flex;
+            justify-content: center;
+            margin-top: 33px;
             .upload-btn{
                 overflow: hidden;
                 white-space: nowrap;
@@ -509,22 +521,43 @@ body{
             label{
                 cursor: pointer;
                 background: url(../images/upload.svg) no-repeat;
-                background-position: 120px;
+                background-position: 136px;
                 padding: 40px;
                 font-family: Raleway;
                 font-size: 15px;
                 letter-spacing: 0.01em;
                 color: #F6F6F6;
+                padding-right: 43px;
+                padding-left: 33px;
             }
 
         }
-        input{
+        input, select, textarea{
             background: none;
-            border-bottom: 1px solid white;
+            border-bottom: 1px solid #36353D;
             border-top: none;
             border-right: none;
             border-left: none;
-            padding: 20px;
+            padding: 6px 0 9px 17px;
+            font-family: Raleway;
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 0.01em;
+            color: #36353D;
+
+        }
+        textarea{
+            padding: 5px 0 48px 26px;
+        }
+        select{
+            padding: 6px 0 9px 22px;
+        }
+        option{
+            background-color: #1D1C21;
+            border-bottom: 1px solid #36353D;
+        }
+        .select-label{
+            margin-top: 27px;
         }
 
         button{

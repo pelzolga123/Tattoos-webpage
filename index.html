@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
     <link rel="stylesheet" href="./sass/style.css" />
 </head>  
 
@@ -236,7 +235,7 @@
       <form>
         <label for="email">e-mail *</label>
         <input type="email" id="email" value="Enter your name" required/>
-        <label for="artist-option">pick your artist</label>
+        <label for="artist-option" class="select-label">pick your artist</label>
         <select id="artist-option">
           <option value="svetlyo">Svetlyo</option>
           <option value="renette">Renette</option>
@@ -244,14 +243,14 @@
           <option value="kayla">Kayla</option>
         </select>
 
-        <label for="message">message *</label>
-        <input type="text" id="message" value="Tell us about your idea" required/>
+        <label class="select-label" for="message">message *</label>
+        <textarea  id="message">Tell us about your idea</textarea>
         <div class="upload">
-          <label for="file_1">Upload image</label>
+          <label for="file_1">upload image</label>
           <input type="file" class="upload-btn" id="file_1"/>
-          <label for="file_2">Upload image</label>
+          <label for="file_2">upload image</label>
           <input type="file" class="upload-btn" id="file_2"/>
-          <label for="file_3">Upload image</label>
+          <label for="file_3">upload image</label>
           <input type="file" class="upload-btn" id="file_3"/>
         </div>
 
