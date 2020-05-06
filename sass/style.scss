@@ -9,13 +9,13 @@ body{
 }
 
 #home{
-    background: url(./images/home_background.svg) no-repeat;
+    background: url('../images/home_background.svg') no-repeat;
     background-size: contain;
-    height: 811px;
+    height: 712px;
     display: flex;
 
     .mask{
-       background: url(./images/test.svg) no-repeat;
+       background: url('../images/test.svg') no-repeat;
        background-size: contain;
        width: 899px;
        display: flex;
@@ -122,8 +122,20 @@ body{
 
 #artists{
     width: 1134px;
-    margin-left: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 627px;
 
+    h2{
+        font-family: Playfair Display SC;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 58px;
+        line-height: 65px;
+        color: #89898B;
+        letter-spacing: 0.01em;
+        margin-bottom: 28px;
+    }
     .artists-main{
         display: flex;
         justify-content: space-between;
@@ -136,6 +148,47 @@ body{
             height: 11.45px;
             font-size: 14px;
         }
+
+        h3{
+            font-family: Playfair Display SC;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.01em;
+            color: #F6F6F6;
+            margin:0;
+        }
+        .read{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+
+            span{
+                font-family: Raleway;
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 0.01em;
+                color: #F6F6F6;
+            }
+
+            button{
+                color: #FF0e0e;
+                border: 1px solid #FF0e0e;
+                background: none;
+                width: 11.45px;
+                height: 11.45px;
+                font-size: 9px;
+                padding: 0px;
+                margin-left: 8px;
+                margin-bottom: 2px
+            }
+            .read-btn{
+                align-items: center;
+                display: flex;
+            }
+        }
     }
 }
 
@@ -144,23 +197,65 @@ body{
     background-color: rgba(211, 211, 211, 1);
     .inner-awards{
         height: 408px;
-        background: url(./images/awards/background_img.svg) no-repeat;
+        background: url('../images/awards/background_img.svg') no-repeat;
     }
     .layer{
         display: flex;
         flex-direction: row;
         height: 408px;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 145px;
+        margin-right: 51px;    
         justify-content: space-between;
         align-items: center;
     }
-    .award{
+    .award, .award-middle{
         display: flex;
-
+        margin-top: 2px;
         img{
             margin-right: 15px; 
+            margin-bottom: 25px;
+        }
+        .img-right{
+            margin-bottom: 18px;
+        }
+        .award-text{
+            margin-top: 14px;
+
+            div{
+                margin-top: 7px;
+            }
+        }    
+        h3{
+            font-family: Playfair Display SC;
+            color: #1D1C21;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.01em;
+            margin: 0;
+        }
+        p{
+            font-family: Raleway;
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 0.01em;
+            color: #1D1C21;
+            width: 80%;
+            margin: 0;
+        }
+        span{
+            font-family: Raleway;
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 0.01em;
+            color: #FF0E0E;
+
+        }
+    }
+    .award-middle{
+        margin-left: 118px;
+        p{
+            width: 65%;
         }
     }
 
@@ -172,13 +267,62 @@ body{
         height: 11.45px;
         font-size: 9px;
         padding: 0px;
+        margin-left: 8px;
+        margin-bottom: 5px;
+    }
+    .learn{
+        display: flex;
+        align-items: flex-end;
     }
 }
 
 #featured{
-    width: 80%;
+    width: 1134px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 178px;
+
+    h2{
+        margin-top: 85px;
+        font-family: Playfair Display SC;
+        font-weight: 900;
+        font-size: 57px;
+        line-height: 81px;
+        color: #89898B;
+        letter-spacing: 0.01em;
+        margin-bottom: 0px;
+    }
+    h3{
+        font-family: Playfair Display SC;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+        color: #F6F6F6;
+        margin-bottom: 0px;
+    }
+    .read{
+
+            span{
+                font-family: Raleway;
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 0.01em;
+                color: #F6F6F6;
+            }
+
+            button{
+                color: #FF0e0e;
+                border: 1px solid #FF0e0e;
+                background: none;
+                width: 11.45px;
+                height: 11.45px;
+                font-size: 9px;
+                padding: 0px;
+                margin-left: 8px;
+                margin-bottom: 2px
+            }
+    }
     .featured-main{
         display: flex;
     }
@@ -186,6 +330,20 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+        margin-bottom: -4px;
+    }
+     .col-img{
+        margin-right: 26px;
+    }
+    .right-col{
+        margin-right: 30px;
+        div{
+            margin-top: 48px;
+        }
+    }
+
+    .left-col{
+        margin-top: 22px;
     }
 }
 
@@ -195,7 +353,7 @@ body{
     
     .about-main{
         height: 430px;
-        background: url('./images/about_us/background_img.svg');
+        background: url('../images/about_us/background_img.svg');
         display: flex;
     }
     .container{

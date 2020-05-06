@@ -5,12 +5,12 @@ body {
   padding: 0; }
 
 #home {
-  background: url(./images/home_background.svg) no-repeat;
+  background: url("../images/home_background.svg") no-repeat;
   background-size: contain;
-  height: 811px;
+  height: 712px;
   display: flex; }
   #home .mask {
-    background: url(./images/test.svg) no-repeat;
+    background: url("../images/test.svg") no-repeat;
     background-size: contain;
     width: 899px;
     display: flex; }
@@ -94,7 +94,18 @@ body {
 
 #artists {
   width: 1134px;
-  margin-left: 150px; }
+  margin-left: auto;
+  margin-right: auto;
+  height: 627px; }
+  #artists h2 {
+    font-family: Playfair Display SC;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 58px;
+    line-height: 65px;
+    color: #89898B;
+    letter-spacing: 0.01em;
+    margin-bottom: 28px; }
   #artists .artists-main {
     display: flex;
     justify-content: space-between; }
@@ -105,26 +116,92 @@ body {
       width: 11.45px;
       height: 11.45px;
       font-size: 14px; }
+    #artists .artists-main h3 {
+      font-family: Playfair Display SC;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.01em;
+      color: #F6F6F6;
+      margin: 0; }
+    #artists .artists-main .read {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px; }
+      #artists .artists-main .read span {
+        font-family: Raleway;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+        color: #F6F6F6; }
+      #artists .artists-main .read button {
+        color: #FF0e0e;
+        border: 1px solid #FF0e0e;
+        background: none;
+        width: 11.45px;
+        height: 11.45px;
+        font-size: 9px;
+        padding: 0px;
+        margin-left: 8px;
+        margin-bottom: 2px; }
+      #artists .artists-main .read .read-btn {
+        align-items: center;
+        display: flex; }
 
 #awards {
   height: 408px;
   background-color: lightgray; }
   #awards .inner-awards {
     height: 408px;
-    background: url(./images/awards/background_img.svg) no-repeat; }
+    background: url("../images/awards/background_img.svg") no-repeat; }
   #awards .layer {
     display: flex;
     flex-direction: row;
     height: 408px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 145px;
+    margin-right: 51px;
     justify-content: space-between;
     align-items: center; }
-  #awards .award {
-    display: flex; }
-    #awards .award img {
-      margin-right: 15px; }
+  #awards .award, #awards .award-middle {
+    display: flex;
+    margin-top: 2px; }
+    #awards .award img, #awards .award-middle img {
+      margin-right: 15px;
+      margin-bottom: 25px; }
+    #awards .award .img-right, #awards .award-middle .img-right {
+      margin-bottom: 18px; }
+    #awards .award .award-text, #awards .award-middle .award-text {
+      margin-top: 14px; }
+      #awards .award .award-text div, #awards .award-middle .award-text div {
+        margin-top: 7px; }
+    #awards .award h3, #awards .award-middle h3 {
+      font-family: Playfair Display SC;
+      color: #1D1C21;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.01em;
+      margin: 0; }
+    #awards .award p, #awards .award-middle p {
+      font-family: Raleway;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+      color: #1D1C21;
+      width: 80%;
+      margin: 0; }
+    #awards .award span, #awards .award-middle span {
+      font-family: Raleway;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+      color: #FF0E0E; }
+  #awards .award-middle {
+    margin-left: 118px; }
+    #awards .award-middle p {
+      width: 65%; }
   #awards button {
     color: #FF0e0e;
     border: 1px solid #FF0e0e;
@@ -132,25 +209,73 @@ body {
     width: 11.45px;
     height: 11.45px;
     font-size: 9px;
-    padding: 0px; }
+    padding: 0px;
+    margin-left: 8px;
+    margin-bottom: 5px; }
+  #awards .learn {
+    display: flex;
+    align-items: flex-end; }
 
 #featured {
-  width: 80%;
+  width: 1134px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-bottom: 178px; }
+  #featured h2 {
+    margin-top: 85px;
+    font-family: Playfair Display SC;
+    font-weight: 900;
+    font-size: 57px;
+    line-height: 81px;
+    color: #89898B;
+    letter-spacing: 0.01em;
+    margin-bottom: 0px; }
+  #featured h3 {
+    font-family: Playfair Display SC;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+    color: #F6F6F6;
+    margin-bottom: 0px; }
+  #featured .read span {
+    font-family: Raleway;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #F6F6F6; }
+  #featured .read button {
+    color: #FF0e0e;
+    border: 1px solid #FF0e0e;
+    background: none;
+    width: 11.45px;
+    height: 11.45px;
+    font-size: 9px;
+    padding: 0px;
+    margin-left: 8px;
+    margin-bottom: 2px; }
   #featured .featured-main {
     display: flex; }
   #featured .feature-header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline; }
+    align-items: baseline;
+    margin-bottom: -4px; }
+  #featured .col-img {
+    margin-right: 26px; }
+  #featured .right-col {
+    margin-right: 30px; }
+    #featured .right-col div {
+      margin-top: 48px; }
+  #featured .left-col {
+    margin-top: 22px; }
 
 #about-us {
   background-color: lightgray;
   height: 430px; }
   #about-us .about-main {
     height: 430px;
-    background: url("./images/about_us/background_img.svg");
+    background: url("../images/about_us/background_img.svg");
     display: flex; }
   #about-us .container {
     display: flex;
