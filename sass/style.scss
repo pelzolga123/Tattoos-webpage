@@ -7,6 +7,13 @@ body{
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+
 
 #home{
     background: url('../images/home_background.svg') no-repeat;
@@ -41,20 +48,21 @@ body{
         margin-right: auto;
 
         ul{
-            font-family: Raleway;
-            font-style: normal;
             list-style: none;
-            color: #F6F6F6;
-            font-size: 15px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             padding: 0;
             margin-bottom: 10px;
-
-            .contact-a{
-               color: #FD0000;
-            }
+        }
+        a{
+            font-family: Raleway;
+            color: #F6F6F6;
+            font-size: 15px;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #FF0E0E;
         }
     }
 
@@ -92,7 +100,7 @@ body{
                 margin-right: 3px;
             }
 
-            button{
+            .btn{
                 color: #d8d8d9;
                 border: 2px solid #d8d8d9;
                 box-sizing: border-box;
@@ -108,6 +116,7 @@ body{
                 justify-content: center;
                 margin-top: 41px;
                 margin-right: 3px;
+                text-decoration: none;
                 
                 .plus{
                     font-size: 34px;
@@ -173,7 +182,7 @@ body{
                 color: #F6F6F6;
             }
 
-            button{
+            a{
                 color: #FF0e0e;
                 border: 1px solid #FF0e0e;
                 background: none;
@@ -182,7 +191,8 @@ body{
                 font-size: 9px;
                 padding: 0px;
                 margin-left: 8px;
-                margin-bottom: 2px
+                margin-bottom: 2px;
+                text-align: center;
             }
             .read-btn{
                 align-items: center;
@@ -251,24 +261,24 @@ body{
             color: #FF0E0E;
 
         }
+        a{
+            color: #FF0e0e;
+            border: 1px solid #FF0e0e;
+            background: none;
+            width: 11.45px;
+            height: 11.45px;
+            font-size: 9px;
+            padding: 0px;
+            margin-left: 8px;
+            margin-bottom: 4px;
+            text-align: center;
+        }
     }
     .award-middle{
         margin-left: 118px;
         p{
             width: 65%;
         }
-    }
-
-    button{
-        color: #FF0e0e;
-        border: 1px solid #FF0e0e;
-        background: none;
-        width: 11.45px;
-        height: 11.45px;
-        font-size: 9px;
-        padding: 0px;
-        margin-left: 8px;
-        margin-bottom: 5px;
     }
     .learn{
         display: flex;
@@ -302,7 +312,7 @@ body{
         margin-bottom: 0px;
     }
     .read{
-
+        display: flex;
             span{
                 font-family: Raleway;
                 font-size: 15px;
@@ -311,7 +321,7 @@ body{
                 color: #F6F6F6;
             }
 
-            button{
+            a{
                 color: #FF0e0e;
                 border: 1px solid #FF0e0e;
                 background: none;
@@ -320,7 +330,8 @@ body{
                 font-size: 9px;
                 padding: 0px;
                 margin-left: 8px;
-                margin-bottom: 2px
+                margin-bottom: 4px;
+                text-align: center;
             }
     }
     .featured-main{
@@ -442,10 +453,11 @@ body{
     }
 
     .show-btn{
-        width: 97px;
+        width: 101px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
+        display: flex;
         span{
             font-family: Raleway;
             font-size: 15px;
@@ -454,7 +466,7 @@ body{
             color: #F6F6F6;
         }
 
-        button{
+        a{
             color: #FF0e0e;
             border: 1px solid #FF0e0e;
             background: none;
@@ -462,8 +474,9 @@ body{
             height: 11.45px;
             font-size: 9px;
             padding: 0px;
-            margin-left: 3px;
-            margin-bottom: 2px
+            margin-left: 8px;
+            margin-bottom: 2px;
+            text-align: center;
         }
     }
 }
@@ -644,11 +657,7 @@ body{
         ul{
             border-bottom: 1px solid #F6F6F6;
             border-top: 1px solid #F6F6F6;
-            font-family: Raleway;
-            font-style: normal;
             list-style: none;
-            color: #F6F6F6;
-            font-size: 15px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -658,9 +667,13 @@ body{
 
             a{
                 letter-spacing: 0.01em;
+                font-family: Raleway;
+                color: #F6F6F6;
+                font-size: 15px;
+                text-decoration: none;
             }
-            .contact-a{
-               color: #FD0000;
+            a:hover{
+                color: #FF0E0E;
             }
         }
 
