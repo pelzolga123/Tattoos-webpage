@@ -12,14 +12,14 @@ body {
   #home .mask {
     background: url("../images/test.svg") no-repeat;
     background-size: contain;
-    width: 899px;
+    width: 906px;
     display: flex; }
   #home .mask-color {
     display: flex;
     background-color: rgba(29, 28, 33, 0.7);
     width: 100%;
     position: absolute;
-    height: 665px; }
+    height: 670px; }
   #home .home-content {
     width: 1156px;
     margin-left: auto;
@@ -295,7 +295,7 @@ body {
       padding: 18px 0; }
   #about-us .about-main {
     height: 430px;
-    background: url("../images/about_us/background_img.svg");
+    background: url("../images/about_us/background_img.svg") no-repeat;
     display: flex; }
   #about-us .container {
     display: flex;
@@ -391,7 +391,8 @@ body {
     margin-right: auto;
     margin-bottom: 19px; }
     #contact form .upload {
-      display: flex; }
+      display: flex;
+      justify-content: center; }
       #contact form .upload .upload-btn {
         overflow: hidden;
         white-space: nowrap;
@@ -405,12 +406,14 @@ body {
       #contact form .upload label {
         cursor: pointer;
         background: url(../images/upload.svg) no-repeat;
-        background-position: 120px;
-        padding: 40px;
+        background-position: 136px;
+        padding: 33px;
         font-family: Raleway;
         font-size: 15px;
         letter-spacing: 0.01em;
-        color: #F6F6F6; }
+        color: #F6F6F6;
+        padding-right: 43px;
+        padding-left: 33px; }
     #contact form input, #contact form select, #contact form textarea {
       background: none;
       border-bottom: 1px solid #36353D;
@@ -446,8 +449,7 @@ body {
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      margin-top: 41px;
-      margin-right: 3px;
+      margin-top: 8px;
       align-self: center; }
       #contact form button .plus {
         font-size: 34px;
@@ -458,7 +460,8 @@ body {
     display: flex;
     justify-content: space-between;
     height: 317px;
-    background-color: #C4C4C4; }
+    background-color: #C4C4C4;
+    margin-top: 80px; }
     #contact .map-section .social-icons {
       width: 22%;
       display: flex;
@@ -529,5 +532,29 @@ body {
       justify-content: space-between; }
       .footer .footer-bottom .social-icons img {
         width: 15px; }
+
+@media only screen and (min-width: 1441px) {
+  #home {
+    background-size: cover;
+    height: 664px; }
+
+  #awards .inner-awards {
+    background-size: cover; }
+  #awards .layer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%; }
+  #awards .award, #awards .award-middle {
+    width: 33%;
+    justify-content: center; }
+  #awards .award-middle {
+    margin: 0; }
+
+  #about-us .about-main {
+    background-size: cover; }
+  #about-us .container {
+    position: relative; }
+  #about-us img {
+    left: 43%; } }
 
 /*# sourceMappingURL=style.css.map */
