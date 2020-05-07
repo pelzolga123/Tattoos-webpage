@@ -537,6 +537,8 @@ body {
   #home {
     background-size: cover;
     height: 664px; }
+    #home .mask-color {
+      height: 664px; }
 
   #awards .inner-awards {
     background-size: cover; }
@@ -556,5 +558,301 @@ body {
     position: relative; }
   #about-us img {
     left: 43%; } }
+@media only screen and (max-width: 1439px) and (min-width: 1024px) {
+  #home {
+    background-size: cover;
+    height: 664px; }
+    #home .mask-color {
+      height: 664px; }
+    #home .home-content {
+      width: 90%; }
+    #home nav {
+      width: 100%; }
+
+  #artists {
+    width: 90%; }
+    #artists img {
+      width: 200px; }
+    #artists h3 {
+      font-size: 20px !important; }
+
+  #awards .inner-awards {
+    background-size: cover; }
+  #awards .layer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 96%; }
+  #awards .award, #awards .award-middle {
+    width: 32%;
+    justify-content: center; }
+  #awards .award-middle {
+    margin: 0; }
+    #awards .award-middle p {
+      width: 100%; }
+
+  #featured {
+    width: 90%; }
+    #featured img {
+      width: 200px; }
+
+  #about-us img {
+    left: 43%;
+    width: 500px; }
+  #about-us .container {
+    width: 90%;
+    position: relative; }
+  #about-us .about {
+    width: 385px; }
+    #about-us .about p {
+      font-size: 13px; }
+
+  #instagram .collection {
+    width: 866px;
+    display: flex;
+    flex-direction: column; }
+  #instagram .big-col {
+    display: none; }
+  #instagram .small-col {
+    justify-content: center; }
+    #instagram .small-col img {
+      margin-left: 15px;
+      margin-right: 0; }
+
+  #contact {
+    width: 90%; }
+
+  footer {
+    width: 90% !important; }
+    footer .footer-bottom {
+      font-size: 11px !important; } }
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  #home {
+    background-size: cover;
+    height: 664px; }
+    #home .mask-color {
+      height: 664px; }
+    #home .home-content {
+      width: 95%; }
+    #home nav {
+      width: 100%; }
+      #home nav li {
+        font-size: 12px; }
+    #home .logo-column {
+      margin-right: 25px !important; }
+
+  #artists {
+    width: 90%; }
+    #artists img {
+      width: 150px; }
+    #artists .read {
+      flex-direction: column; }
+    #artists .artists-main div {
+      width: 90%; }
+
+  #awards .inner-awards {
+    background-size: cover; }
+  #awards .layer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 96%; }
+  #awards .award, #awards .award-middle {
+    width: 32%;
+    justify-content: center; }
+    #awards .award img, #awards .award-middle img {
+      width: 25%; }
+  #awards .award-text h3 {
+    font-size: 14px; }
+  #awards .award-text p {
+    font-size: 12px; }
+  #awards .award-middle {
+    margin: 0; }
+    #awards .award-middle p {
+      width: 100%; }
+
+  #featured {
+    width: 90%; }
+    #featured .featured-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    #featured .right-col {
+      margin-right: 0; }
+
+  #about-us img {
+    display: none; }
+  #about-us .container {
+    width: 80%;
+    position: relative; }
+  #about-us .about {
+    width: 385px; }
+    #about-us .about p {
+      font-size: 13px; }
+
+  #instagram h2 {
+    font-size: 36px; }
+  #instagram .collection {
+    width: 760px;
+    display: flex;
+    flex-direction: column; }
+  #instagram .big-col {
+    display: none; }
+  #instagram .small-col {
+    justify-content: center; }
+    #instagram .small-col img {
+      margin-left: 15px !important;
+      margin-right: 0 !important; }
+
+  #contact {
+    width: 80%; }
+    #contact .map-section {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
+      height: 568px; }
+    #contact .map-info {
+      width: 70% !important;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px !important; }
+    #contact h4 {
+      font-size: 12px !important; }
+    #contact p {
+      font-size: 13px !important; }
+
+  footer {
+    width: 95% !important; }
+    footer ul {
+      font-size: 13px !important; }
+    footer .footer-bottom {
+      font-size: 11px !important; } }
+@media only screen and (max-width: 767px) {
+  .mask .mask-color, #home, .home-content {
+    background: none;
+    width: 100%;
+    margin-top: 0 !important; }
+
+  #home {
+    height: 900px; }
+    #home nav {
+      width: 100%;
+      border-bottom: none; }
+      #home nav ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center; }
+      #home nav li {
+        border-bottom: 1px solid #F6F6F6;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center; }
+    #home .winner-part img {
+      display: none; }
+    #home .winner-part .logo-column {
+      margin-left: auto;
+      margin-right: auto; }
+      #home .winner-part .logo-column img {
+        display: block; }
+
+  #artists {
+    width: 90%;
+    height: 100%;
+    margin-bottom: 20px; }
+    #artists h2 {
+      text-align: center;
+      font-size: 48px; }
+    #artists .artists-main {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap; }
+
+  #awards {
+    height: 100%; }
+    #awards .inner-awards {
+      background: none;
+      height: 100%; }
+    #awards .layer {
+      flex-wrap: wrap;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px 0;
+      height: 100%; }
+    #awards .award, #awards .award-middle {
+      width: 100%; }
+    #awards .award-middle {
+      margin-left: 0; }
+
+  #featured {
+    width: 85%; }
+    #featured h2 {
+      font-size: 36px; }
+    #featured .feature-header {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column; }
+    #featured .featured-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    #featured .right-col {
+      margin-right: 0; }
+    #featured .works-img, #featured .left-col {
+      width: 50%;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 0px; }
+    #featured img {
+      margin-top: 5px;
+      margin-bottom: 5px; }
+
+  #about-us {
+    width: 100%;
+    height: 100%; }
+    #about-us img {
+      display: none; }
+    #about-us .about {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto; }
+    #about-us h2 {
+      font-size: 24px; }
+    #about-us p {
+      font-size: 14px; }
+
+  #instagram h2 {
+    font-size: 24px; }
+  #instagram .collection {
+    width: 90%;
+    display: flex;
+    flex-direction: column; }
+  #instagram .big-col {
+    display: none; }
+  #instagram .small-col {
+    justify-content: center; }
+    #instagram .small-col img {
+      margin-left: 5px !important;
+      margin-right: 0 !important; }
+
+  #contact {
+    width: 90%; }
+    #contact img {
+      display: none; }
+    #contact form {
+      width: 80%; }
+    #contact .map-info {
+      width: 60% !important; }
+    #contact .map-section {
+      height: 100%; }
+
+  footer {
+    width: 90% !important; }
+    footer ul {
+      display: none !important; }
+    footer .footer-bottom {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0; } }
 
 /*# sourceMappingURL=style.css.map */
