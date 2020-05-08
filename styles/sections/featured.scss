@@ -1,75 +1,82 @@
 @import "../helpers/mixins";
 @import "../helpers/variables";
 
-#featured{
-    @include margin-auto;
-    width: 1134px;
-    padding-bottom: 178px;
+#featured {
+  @include margin-auto;
 
-    img{
-        cursor: pointer;
+  width: 1134px;
+  padding-bottom: 178px;
+
+  img {
+    cursor: pointer;
+  }
+
+  h2 {
+    @include font(57px, Playfair Display SC, $font-gray);
+
+    margin-top: 85px;
+    font-weight: 900;
+    line-height: 81px;
+    letter-spacing: 0.01em;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    @include font(24px, Playfair Display SC, $border-color);
+
+    font-weight: 900;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+    margin-bottom: 0;
+  }
+
+  .read {
+    display: flex;
+
+    span {
+      @include font(15px, Raleway, $border-color);
+
+      line-height: 18px;
+      letter-spacing: 0.01em;
     }
 
-    h2{
-        @include font(57px, Playfair Display SC, $font-gray);
-        margin-top: 85px;
-        font-weight: 900;
-        line-height: 81px;
-        letter-spacing: 0.01em;
-        margin-bottom: 0px;
+    a {
+      @include font(11px, Raleway, $border-color);
+      @include plus-btn($border-color);
+
+      margin-bottom: 4px;
     }
 
-    h3{
-        @include font(24px, Playfair Display SC, $border-color);
-        font-weight: 900;
-        line-height: 32px;
-        letter-spacing: 0.01em;
-        margin-bottom: 0px;
+    a:hover {
+      color: $red-color;
+      border-color: $red-color;
     }
+  }
 
-    .read{
-        display: flex;
+  .featured-main {
+    display: flex;
+  }
 
-        span {
-            @include font(15px, Raleway, $border-color);
-            line-height: 18px;
-            letter-spacing: 0.01em;
-        }
+  .feature-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: -4px;
+  }
 
-        a{  @include font(11px, Raleway, $border-color);
-            @include plus-btn($border-color);
-            margin-bottom: 4px;
-        }
+  .col-img {
+    margin-right: 26px;
+  }
 
-        a:hover{
-            color: $red-color;
-            border-color: $red-color;
-        }
+  .right-col {
+    margin-right: 30px;
+
+    div {
+      margin-top: 48px;
     }
+  }
 
-    .featured-main{
-        display: flex;
-    }
-
-    .feature-header{
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        margin-bottom: -4px;
-    }
-
-    .col-img{
-        margin-right: 26px;
-    }
-    
-    .right-col{
-        margin-right: 30px;
-        div{
-            margin-top: 48px;
-        }
-    }
-
-    .left-col{
-        margin-top: 22px;
-    }
+  .left-col {
+    margin-top: 22px;
+  }
 }

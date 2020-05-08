@@ -1,155 +1,165 @@
 @import "../helpers/mixins";
 @import "../helpers/variables";
 
-#contact{
+#contact {
+  @include margin-auto;
+
+  width: 1134px;
+  margin-bottom: 80px;
+  margin-top: 81px;
+
+  h3 {
+    @include font(24px, Playfair Display SC, $border-color);
+
+    font-weight: 900;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin-bottom: 19px;
+  }
+
+  label {
+    @include font(15px, Raleway, $border-color);
+
+    line-height: 18px;
+    letter-spacing: 0.01em;
+  }
+
+  form {
+    @include flex-col;
     @include margin-auto;
-    width: 1134px;
+
     margin-bottom: 80px;
-    margin-top: 81px;
+    width: 540px;
 
-    h3{
-        @include font(24px, Playfair Display SC, $border-color);
-        font-weight: 900;
-        line-height: 32px;
-        text-align: center;
-        letter-spacing: 0.01em;
-        margin-bottom: 19px;
+    .upload {
+      display: flex;
+      justify-content: center;
 
-    }
+      .upload-btn {
+        overflow: hidden;
+        white-space: nowrap;
+        position: absolute;
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        width: 1px;
+      }
 
-    label{
+      label {
         @include font(15px, Raleway, $border-color);
-        line-height: 18px;
+
+        cursor: pointer;
+        background: url(../images/upload.svg) no-repeat;
+        background-position: 136px;
+        padding: 33px 43px 33px 33px;
         letter-spacing: 0.01em;
-    }
+      }
 
-    form{
-        @include flex-col;
-        @include margin-auto;
-        margin-bottom: 80px;
-        width: 540px;
-
-        .upload{
-            display: flex;
-            justify-content: center;
-
-            .upload-btn{
-                overflow: hidden;
-                white-space: nowrap;
-                position: absolute;
-                border: 0;
-                clip: rect(0, 0, 0, 0);
-                height: 1px;
-                width: 1px;
-            }
-
-            .upload-btn + label{
-                display: inline-block;
-            }
-
-            label{
-                @include font(15px, Raleway, $border-color);
-                cursor: pointer;
-                background: url(../images/upload.svg) no-repeat;
-                background-position: 136px;
-                padding: 33px 43px 33px 33px;
-                letter-spacing: 0.01em;
-            }
-
-        }
-
-        input, select, textarea{
-            @include font(15px, Raleway, $dark-gray);
-            background: none;
-            border-bottom: 1px solid $dark-gray;
-            border-top: none;
-            border-right: none;
-            border-left: none;
-            padding: 6px 0 9px 17px;
-            line-height: 18px;
-            letter-spacing: 0.01em;
-        }
-        
-        textarea{
-            padding: 5px 0 48px 26px;
-        }
-
-        select{
-            padding: 6px 0 9px 22px;
-        }
-
-        option{
-            background-color: $background-main;
-            border-bottom: 1px solid $dark-gray;
-        }
-        .select-label{
-            margin-top: 27px;
-        }
-
-        button{
-            @include font(16px, Raleway, $font-light);
-            @include flex-row;
-            border: 2px solid $font-light;
-            font-weight: 600;
-            background: none;
-            line-height: 19px;
-            width: 180px;
-            align-items: center;
-            justify-content: center;
-            margin-top: 8px;
-            align-self: center;
-            
-            .plus{
-                font-size: 34px;
-                line-height: 40px;
-                font-weight: 300;
-                margin-left: 12px;
-            }
-        }
-    }
-
-    .map-section{
-        display: flex;
-        justify-content: space-between; 
-        height: 317px;
-        background-color: $map-gray;
-        margin-top: 80px;
-
-        .social-icons{
-            width: 22%;
-            display: flex;
-            justify-content: space-between;
-            margin-top: 15px;
-
-             img{
-                 width: 20px;
-             
-            }
-        }
-
-        .map-info{
-            @include margin-auto;
-            width: 26%;
-            margin-top: 20px;
-
-            div{
-                margin-top: 12px;
-            }
-        }
-
-        h4{
-            @include font(14px, Playfair Display SC, $background-main);
-            font-weight: 900;
-            line-height: 19px;
-            letter-spacing: 0.01em;
-            margin: 0;
-        }
-
-        p{
-            @include font(15px,  Raleway, $background-main);
-            line-height: 18px;
-            letter-spacing: 0.01em;
-            margin: 0;
-        }
+      .upload-btn + label {
+        display: inline-block;
       }
     }
+
+    input,
+    select,
+    textarea {
+      @include font(15px, Raleway, $dark-gray);
+
+      background: none;
+      border-bottom: 1px solid $dark-gray;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      padding: 6px 0 9px 17px;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+    }
+
+    textarea {
+      padding: 5px 0 48px 26px;
+    }
+
+    select {
+      padding: 6px 0 9px 22px;
+    }
+
+    option {
+      background-color: $background-main;
+      border-bottom: 1px solid $dark-gray;
+    }
+
+    .select-label {
+      margin-top: 27px;
+    }
+
+    button {
+      @include font(16px, Raleway, $font-light);
+      @include flex-row;
+
+      border: 2px solid $font-light;
+      font-weight: 600;
+      background: none;
+      line-height: 19px;
+      width: 180px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+      align-self: center;
+
+      .plus {
+        font-size: 34px;
+        line-height: 40px;
+        font-weight: 300;
+        margin-left: 12px;
+      }
+    }
+  }
+
+  .map-section {
+    display: flex;
+    justify-content: space-between;
+    height: 317px;
+    background-color: $map-gray;
+    margin-top: 80px;
+
+    .social-icons {
+      width: 22%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+
+      img {
+        width: 20px;
+      }
+    }
+
+    .map-info {
+      @include margin-auto;
+
+      width: 26%;
+      margin-top: 20px;
+
+      div {
+        margin-top: 12px;
+      }
+    }
+
+    h4 {
+      @include font(14px, Playfair Display SC, $background-main);
+
+      font-weight: 900;
+      line-height: 19px;
+      letter-spacing: 0.01em;
+      margin: 0;
+    }
+
+    p {
+      @include font(15px,  Raleway, $background-main);
+
+      line-height: 18px;
+      letter-spacing: 0.01em;
+      margin: 0;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@900&family=Raleway:wght@400;600&display=swap");
+
 #lightbox {
   position: fixed;
   display: none;
@@ -6,897 +7,1331 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(211, 211, 211, 0.6); }
-  #lightbox div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; }
+  background-color: rgba(211, 211, 211, 0.6);
+}
+
+#lightbox div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 
 #lightbox.active {
   display: flex;
   justify-content: center;
-  align-items: center; }
-  #lightbox.active .close-btn {
-    position: absolute;
-    border: none;
-    cursor: pointer; }
+  align-items: center;
+}
+
+#lightbox.active .close-btn {
+  position: absolute;
+  border: none;
+  cursor: pointer;
+}
 
 #home {
   background: url("../images/home_background.svg") no-repeat;
   background-size: contain;
   display: flex;
-  height: 712px; }
-  #home .mask {
-    display: flex;
-    background: url("../images/test.svg") no-repeat;
-    background-size: contain;
-    width: 906px; }
-  #home .mask-color {
-    background-color: rgba(29, 28, 33, 0.7);
-    display: flex;
-    height: 670px;
-    position: absolute;
-    width: 100%; }
-  #home .home-content {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    width: 1156px; }
-  #home nav {
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom: 1px solid #F6F6F6;
-    width: 1134px; }
-    #home nav ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      list-style: none;
-      margin-bottom: 10px;
-      padding: 0; }
-    #home nav a {
-      font-family: Raleway;
-      color: #F6F6F6;
-      font-size: 15px; }
-    #home nav a:hover {
-      color: #FF0E0E; }
-  #home .winner-part {
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: space-between;
-    margin-top: 8px; }
-    #home .winner-part .social-icons {
-      display: flex;
-      flex-direction: column;
-      margin-right: 10px; }
-      #home .winner-part .social-icons img {
-        margin: 10px 0; }
-    #home .winner-part .logo-column {
-      display: flex;
-      flex-direction: column;
-      margin-top: 48px;
-      align-items: center;
-      margin-right: 85px; }
-      #home .winner-part .logo-column h3 {
-        font-family: Playfair Display SC;
-        color: #fff;
-        font-size: 18px;
-        font-weight: 900;
-        margin-right: 3px;
-        margin-top: 0; }
-      #home .winner-part .logo-column .btn {
-        font-family: Raleway;
-        color: #d8d8d9;
-        font-size: 16px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        background: none;
-        border: 2px solid #d8d8d9;
-        font-weight: 600;
-        justify-content: center;
-        line-height: 19px;
-        margin-right: 3px;
-        margin-top: 41px;
-        width: 180px; }
-        #home .winner-part .logo-column .btn .plus {
-          font-size: 34px;
-          font-weight: 300;
-          line-height: 40px;
-          margin-left: 12px; }
+  height: 712px;
+}
+
+#home .mask {
+  display: flex;
+  background: url("../images/test.svg") no-repeat;
+  background-size: contain;
+  width: 906px;
+}
+
+#home .mask-color {
+  background-color: rgba(29, 28, 33, 0.7);
+  display: flex;
+  height: 670px;
+  position: absolute;
+  width: 100%;
+}
+
+#home .home-content {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 1156px;
+}
+
+#home nav {
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #f6f6f6;
+  width: 1134px;
+}
+
+#home nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+#home nav a {
+  font-family: Raleway;
+  color: #f6f6f6;
+  font-size: 15px;
+}
+
+#home nav a:hover {
+  color: #ff0e0e;
+}
+
+#home .winner-part {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+#home .winner-part .social-icons {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+#home .winner-part .social-icons img {
+  margin: 10px 0;
+}
+
+#home .winner-part .logo-column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  align-items: center;
+  margin-right: 85px;
+}
+
+#home .winner-part .logo-column h3 {
+  font-family: Playfair Display SC;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  margin-right: 3px;
+  margin-top: 0;
+}
+
+#home .winner-part .logo-column .btn {
+  font-family: Raleway;
+  color: #d8d8d9;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: none;
+  border: 2px solid #d8d8d9;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 19px;
+  margin-right: 3px;
+  margin-top: 41px;
+  width: 180px;
+}
+
+#home .winner-part .logo-column .btn .plus {
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 40px;
+  margin-left: 12px;
+}
 
 #artists {
   margin-left: auto;
   margin-right: auto;
   height: 627px;
-  width: 1134px; }
-  #artists h2 {
-    font-family: Playfair Display SC;
-    color: #89898B;
-    font-size: 58px;
-    font-weight: 900;
-    line-height: 65px;
-    letter-spacing: 0.01em;
-    margin-bottom: 28px; }
-  #artists .artists-main {
-    display: flex;
-    justify-content: space-between; }
-    #artists .artists-main .plus-btn {
-      font-family: Raleway;
-      color: #FF0E0E;
-      font-size: 14px;
-      border: 1px solid #FF0E0E;
-      background: none;
-      width: 11.45px;
-      height: 11.45px; }
-    #artists .artists-main h3 {
-      font-family: Playfair Display SC;
-      color: #F6F6F6;
-      font-size: 24px;
-      font-weight: 900;
-      line-height: 32px;
-      letter-spacing: 0.01em;
-      margin: 0; }
-    #artists .artists-main .read {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 2px; }
-      #artists .artists-main .read span {
-        font-family: Raleway;
-        color: #F6F6F6;
-        font-size: 15px;
-        line-height: 18px;
-        letter-spacing: 0.01em; }
-      #artists .artists-main .read a {
-        font-family: Raleway;
-        color: #F6F6F6;
-        font-size: 11px;
-        border: 1px solid #F6F6F6;
-        background: none;
-        width: 11.45px;
-        height: 11.45px;
-        padding: 0px;
-        margin-left: 8px;
-        text-align: center;
-        font-weight: 600;
-        margin-bottom: 2px; }
-      #artists .artists-main .read a:hover {
-        color: #FF0E0E;
-        border-color: #FF0E0E; }
-      #artists .artists-main .read .read-btn {
-        align-items: center;
-        display: flex; }
+  width: 1134px;
+}
+
+#artists h2 {
+  font-family: Playfair Display SC;
+  color: #89898b;
+  font-size: 58px;
+  font-weight: 900;
+  line-height: 65px;
+  letter-spacing: 0.01em;
+  margin-bottom: 28px;
+}
+
+#artists .artists-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+#artists .artists-main .plus-btn {
+  font-family: Raleway;
+  color: #ff0e0e;
+  font-size: 14px;
+  border: 1px solid #ff0e0e;
+  background: none;
+  width: 11.45px;
+  height: 11.45px;
+}
+
+#artists .artists-main h3 {
+  font-family: Playfair Display SC;
+  color: #f6f6f6;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+#artists .artists-main .read {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2px;
+}
+
+#artists .artists-main .read span {
+  font-family: Raleway;
+  color: #f6f6f6;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+}
+
+#artists .artists-main .read a {
+  font-family: Raleway;
+  color: #f6f6f6;
+  font-size: 11px;
+  border: 1px solid #f6f6f6;
+  background: none;
+  width: 11.45px;
+  height: 11.45px;
+  padding: 0;
+  margin-left: 8px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+#artists .artists-main .read a:hover {
+  color: #ff0e0e;
+  border-color: #ff0e0e;
+}
+
+#artists .artists-main .read .read-btn {
+  align-items: center;
+  display: flex;
+}
 
 #awards {
   height: 408px;
-  background-color: lightgray; }
-  #awards .inner-awards {
-    height: 408px;
-    background: url("../images/awards/background_img.svg") no-repeat; }
-  #awards .layer {
-    display: flex;
-    flex-direction: row;
-    height: 408px;
-    margin-left: 145px;
-    margin-right: 51px;
-    justify-content: space-between;
-    align-items: center; }
-  #awards .award, #awards .award-middle {
-    display: flex;
-    margin-top: 2px; }
-    #awards .award img, #awards .award-middle img {
-      margin-right: 15px;
-      margin-bottom: 25px; }
-    #awards .award .img-right, #awards .award-middle .img-right {
-      margin-bottom: 18px; }
-    #awards .award .award-text, #awards .award-middle .award-text {
-      margin-top: 14px; }
-      #awards .award .award-text div, #awards .award-middle .award-text div {
-        margin-top: 7px; }
-    #awards .award h3, #awards .award-middle h3 {
-      font-family: Playfair Display SC;
-      color: #1D1C21;
-      font-size: 24px;
-      font-weight: 900;
-      line-height: 32px;
-      letter-spacing: 0.01em;
-      margin: 0; }
-    #awards .award p, #awards .award-middle p {
-      font-family: Raleway;
-      color: #1D1C21;
-      font-size: 15px;
-      line-height: 18px;
-      letter-spacing: 0.01em;
-      width: 80%;
-      margin: 0; }
-    #awards .award span, #awards .award-middle span {
-      font-family: Raleway;
-      color: #1D1C21;
-      font-size: 15px;
-      line-height: 18px;
-      letter-spacing: 0.01em; }
-    #awards .award a, #awards .award-middle a {
-      font-family: Raleway;
-      color: #1D1C21;
-      font-size: 11px;
-      border: 1px solid #1D1C21;
-      background: none;
-      width: 11.45px;
-      height: 11.45px;
-      padding: 0px;
-      margin-left: 8px;
-      text-align: center;
-      font-weight: 600;
-      margin-bottom: 4px; }
-    #awards .award a:hover, #awards .award-middle a:hover {
-      color: #FF0E0E;
-      border-color: #FF0E0E; }
-  #awards .award-middle {
-    margin-left: 118px; }
-    #awards .award-middle p {
-      width: 65%; }
-  #awards .learn {
-    display: flex;
-    align-items: flex-end; }
+  background-color: lightgray;
+}
+
+#awards .inner-awards {
+  height: 408px;
+  background: url("../images/awards/background_img.svg") no-repeat;
+}
+
+#awards .layer {
+  display: flex;
+  flex-direction: row;
+  height: 408px;
+  margin-left: 145px;
+  margin-right: 51px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#awards .award,
+#awards .award-middle {
+  display: flex;
+  margin-top: 2px;
+}
+
+#awards .award img,
+#awards .award-middle img {
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+
+#awards .award .img-right,
+#awards .award-middle .img-right {
+  margin-bottom: 18px;
+}
+
+#awards .award .award-text,
+#awards .award-middle .award-text {
+  margin-top: 14px;
+}
+
+#awards .award .award-text div,
+#awards .award-middle .award-text div {
+  margin-top: 7px;
+}
+
+#awards .award h3,
+#awards .award-middle h3 {
+  font-family: Playfair Display SC;
+  color: #1d1c21;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+#awards .award p,
+#awards .award-middle p {
+  font-family: Raleway;
+  color: #1d1c21;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  width: 80%;
+  margin: 0;
+}
+
+#awards .award span,
+#awards .award-middle span {
+  font-family: Raleway;
+  color: #1d1c21;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+}
+
+#awards .award a,
+#awards .award-middle a {
+  font-family: Raleway;
+  color: #1d1c21;
+  font-size: 11px;
+  border: 1px solid #1d1c21;
+  background: none;
+  width: 11.45px;
+  height: 11.45px;
+  padding: 0;
+  margin-left: 8px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+#awards .award a:hover,
+#awards .award-middle a:hover {
+  color: #ff0e0e;
+  border-color: #ff0e0e;
+}
+
+#awards .award-middle {
+  margin-left: 118px;
+}
+
+#awards .award-middle p {
+  width: 65%;
+}
+
+#awards .learn {
+  display: flex;
+  align-items: flex-end;
+}
 
 #featured {
   margin-left: auto;
   margin-right: auto;
   width: 1134px;
-  padding-bottom: 178px; }
-  #featured img {
-    cursor: pointer; }
-  #featured h2 {
-    font-family: Playfair Display SC;
-    color: #89898B;
-    font-size: 57px;
-    margin-top: 85px;
-    font-weight: 900;
-    line-height: 81px;
-    letter-spacing: 0.01em;
-    margin-bottom: 0px; }
-  #featured h3 {
-    font-family: Playfair Display SC;
-    color: #F6F6F6;
-    font-size: 24px;
-    font-weight: 900;
-    line-height: 32px;
-    letter-spacing: 0.01em;
-    margin-bottom: 0px; }
-  #featured .read {
-    display: flex; }
-    #featured .read span {
-      font-family: Raleway;
-      color: #F6F6F6;
-      font-size: 15px;
-      line-height: 18px;
-      letter-spacing: 0.01em; }
-    #featured .read a {
-      font-family: Raleway;
-      color: #F6F6F6;
-      font-size: 11px;
-      border: 1px solid #F6F6F6;
-      background: none;
-      width: 11.45px;
-      height: 11.45px;
-      padding: 0px;
-      margin-left: 8px;
-      text-align: center;
-      font-weight: 600;
-      margin-bottom: 4px; }
-    #featured .read a:hover {
-      color: #FF0E0E;
-      border-color: #FF0E0E; }
-  #featured .featured-main {
-    display: flex; }
-  #featured .feature-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: -4px; }
-  #featured .col-img {
-    margin-right: 26px; }
-  #featured .right-col {
-    margin-right: 30px; }
-    #featured .right-col div {
-      margin-top: 48px; }
-  #featured .left-col {
-    margin-top: 22px; }
+  padding-bottom: 178px;
+}
+
+#featured img {
+  cursor: pointer;
+}
+
+#featured h2 {
+  font-family: Playfair Display SC;
+  color: #89898b;
+  font-size: 57px;
+  margin-top: 85px;
+  font-weight: 900;
+  line-height: 81px;
+  letter-spacing: 0.01em;
+  margin-bottom: 0;
+}
+
+#featured h3 {
+  font-family: Playfair Display SC;
+  color: #f6f6f6;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+  margin-bottom: 0;
+}
+
+#featured .read {
+  display: flex;
+}
+
+#featured .read span {
+  font-family: Raleway;
+  color: #f6f6f6;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+}
+
+#featured .read a {
+  font-family: Raleway;
+  color: #f6f6f6;
+  font-size: 11px;
+  border: 1px solid #f6f6f6;
+  background: none;
+  width: 11.45px;
+  height: 11.45px;
+  padding: 0;
+  margin-left: 8px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+#featured .read a:hover {
+  color: #ff0e0e;
+  border-color: #ff0e0e;
+}
+
+#featured .featured-main {
+  display: flex;
+}
+
+#featured .feature-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: -4px;
+}
+
+#featured .col-img {
+  margin-right: 26px;
+}
+
+#featured .right-col {
+  margin-right: 30px;
+}
+
+#featured .right-col div {
+  margin-top: 48px;
+}
+
+#featured .left-col {
+  margin-top: 22px;
+}
 
 #about-us {
   background-color: lightgray;
-  height: 430px; }
-  #about-us h2 {
-    font-family: Playfair Display SC;
-    color: #89898B;
-    font-size: 55px;
-    font-weight: 900;
-    letter-spacing: 0.05em;
-    margin: 0; }
-  #about-us p {
-    font-family: Raleway;
-    color: #1D1C21;
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: 0.01em;
-    margin: 0; }
-  #about-us .paragraphs {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3px; }
-    #about-us .paragraphs .paragraph-1 {
-      padding: 18px 0; }
-  #about-us .about-main {
-    height: 430px;
-    background: url("../images/about_us/background_img.svg") no-repeat;
-    display: flex; }
-  #about-us .container {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    width: 1134px; }
-  #about-us .about {
-    display: flex;
-    flex-direction: column;
-    width: 455px;
-    justify-content: center; }
-  #about-us img {
-    position: absolute;
-    align-self: center;
-    left: 632px; }
+  height: 430px;
+}
+
+#about-us h2 {
+  font-family: Playfair Display SC;
+  color: #89898b;
+  font-size: 55px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+#about-us p {
+  font-family: Raleway;
+  color: #1d1c21;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+#about-us .paragraphs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+}
+
+#about-us .paragraphs .paragraph-1 {
+  padding: 18px 0;
+}
+
+#about-us .about-main {
+  height: 430px;
+  background: url("../images/about_us/background_img.svg") no-repeat;
+  display: flex;
+}
+
+#about-us .container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 1134px;
+}
+
+#about-us .about {
+  display: flex;
+  flex-direction: column;
+  width: 455px;
+  justify-content: center;
+}
+
+#about-us img {
+  position: absolute;
+  align-self: center;
+  left: 632px;
+}
 
 #instagram .collection {
   margin-left: auto;
   margin-right: auto;
-  width: 1134px; }
+  width: 1134px;
+}
+
 #instagram h2 {
   font-family: Playfair Display SC;
-  color: #89898B;
+  color: #89898b;
   font-size: 56px;
   font-weight: 900;
   line-height: 81px;
   text-align: center;
   margin-top: 84px;
   margin-bottom: 22px;
-  letter-spacing: 0.02em; }
+  letter-spacing: 0.02em;
+}
+
 #instagram .small-col {
   display: flex;
-  flex-wrap: wrap; }
-  #instagram .small-col img {
-    margin-left: 11px;
-    margin-bottom: 10px; }
+  flex-wrap: wrap;
+}
+
+#instagram .small-col img {
+  margin-left: 11px;
+  margin-bottom: 10px;
+}
+
 #instagram .second-row .small-col img {
   margin-right: 11px;
-  margin-left: 0px; }
+  margin-left: 0;
+}
+
 #instagram .second-row .big-col img {
-  margin-left: 0; }
-#instagram .first-row, #instagram .second-row {
-  display: flex; }
+  margin-left: 0;
+}
+
+#instagram .first-row,
+#instagram .second-row {
+  display: flex;
+}
+
 #instagram .show-btn {
   margin-left: auto;
   margin-right: auto;
   width: 101px;
   margin-top: 20px;
-  display: flex; }
-  #instagram .show-btn span {
-    font-family: Raleway;
-    color: #F6F6F6;
-    font-size: 15px;
-    font-family: Raleway;
-    line-height: 18px;
-    letter-spacing: 0.01em; }
-  #instagram .show-btn a {
-    font-family: Raleway;
-    color: #F6F6F6;
-    font-size: 11px;
-    border: 1px solid #F6F6F6;
-    background: none;
-    width: 11.45px;
-    height: 11.45px;
-    padding: 0px;
-    margin-left: 8px;
-    text-align: center;
-    font-weight: 600;
-    margin-bottom: 2px; }
-  #instagram .show-btn a:hover {
-    color: #FF0E0E;
-    border-color: #FF0E0E; }
+  display: flex;
+}
+
+#instagram .show-btn span {
+  font-family: Raleway;
+  color: #f6f6f6;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+}
+
+#instagram .show-btn a {
+  font-family: Raleway;
+  color: #f6f6f6;
+  font-size: 11px;
+  border: 1px solid #f6f6f6;
+  background: none;
+  width: 11.45px;
+  height: 11.45px;
+  padding: 0;
+  margin-left: 8px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+#instagram .show-btn a:hover {
+  color: #ff0e0e;
+  border-color: #ff0e0e;
+}
 
 #contact {
   margin-left: auto;
   margin-right: auto;
   width: 1134px;
   margin-bottom: 80px;
-  margin-top: 81px; }
-  #contact h3 {
-    font-family: Playfair Display SC;
-    color: #F6F6F6;
-    font-size: 24px;
-    font-weight: 900;
-    line-height: 32px;
-    text-align: center;
-    letter-spacing: 0.01em;
-    margin-bottom: 19px; }
-  #contact label {
-    font-family: Raleway;
-    color: #F6F6F6;
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: 0.01em; }
-  #contact form {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 80px;
-    width: 540px; }
-    #contact form .upload {
-      display: flex;
-      justify-content: center; }
-      #contact form .upload .upload-btn {
-        overflow: hidden;
-        white-space: nowrap;
-        position: absolute;
-        border: 0;
-        clip: rect(0, 0, 0, 0);
-        height: 1px;
-        width: 1px; }
-      #contact form .upload .upload-btn + label {
-        display: inline-block; }
-      #contact form .upload label {
-        font-family: Raleway;
-        color: #F6F6F6;
-        font-size: 15px;
-        cursor: pointer;
-        background: url(../images/upload.svg) no-repeat;
-        background-position: 136px;
-        padding: 33px 43px 33px 33px;
-        letter-spacing: 0.01em; }
-    #contact form input, #contact form select, #contact form textarea {
-      font-family: Raleway;
-      color: #36353D;
-      font-size: 15px;
-      background: none;
-      border-bottom: 1px solid #36353D;
-      border-top: none;
-      border-right: none;
-      border-left: none;
-      padding: 6px 0 9px 17px;
-      line-height: 18px;
-      letter-spacing: 0.01em; }
-    #contact form textarea {
-      padding: 5px 0 48px 26px; }
-    #contact form select {
-      padding: 6px 0 9px 22px; }
-    #contact form option {
-      background-color: #1D1C21;
-      border-bottom: 1px solid #36353D; }
-    #contact form .select-label {
-      margin-top: 27px; }
-    #contact form button {
-      font-family: Raleway;
-      color: #d8d8d9;
-      font-size: 16px;
-      display: flex;
-      flex-direction: row;
-      border: 2px solid #d8d8d9;
-      font-weight: 600;
-      background: none;
-      line-height: 19px;
-      width: 180px;
-      align-items: center;
-      justify-content: center;
-      margin-top: 8px;
-      align-self: center; }
-      #contact form button .plus {
-        font-size: 34px;
-        line-height: 40px;
-        font-weight: 300;
-        margin-left: 12px; }
-  #contact .map-section {
-    display: flex;
-    justify-content: space-between;
-    height: 317px;
-    background-color: #C4C4C4;
-    margin-top: 80px; }
-    #contact .map-section .social-icons {
-      width: 22%;
-      display: flex;
-      justify-content: space-between;
-      margin-top: 15px; }
-      #contact .map-section .social-icons img {
-        width: 20px; }
-    #contact .map-section .map-info {
-      margin-left: auto;
-      margin-right: auto;
-      width: 26%;
-      margin-top: 20px; }
-      #contact .map-section .map-info div {
-        margin-top: 12px; }
-    #contact .map-section h4 {
-      font-family: Playfair Display SC;
-      color: #1D1C21;
-      font-size: 14px;
-      font-weight: 900;
-      line-height: 19px;
-      letter-spacing: 0.01em;
-      margin: 0; }
-    #contact .map-section p {
-      font-family: Raleway;
-      color: #1D1C21;
-      font-size: 15px;
-      line-height: 18px;
-      letter-spacing: 0.01em;
-      margin: 0; }
+  margin-top: 81px;
+}
+
+#contact h3 {
+  font-family: Playfair Display SC;
+  color: #f6f6f6;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  margin-bottom: 19px;
+}
+
+#contact label {
+  font-family: Raleway;
+  color: #f6f6f6;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  width: 540px;
+}
+
+#contact form .upload {
+  display: flex;
+  justify-content: center;
+}
+
+#contact form .upload .upload-btn {
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+}
+
+#contact form .upload label {
+  font-family: Raleway;
+  color: #f6f6f6;
+  font-size: 15px;
+  cursor: pointer;
+  background: url(../images/upload.svg) no-repeat;
+  background-position: 136px;
+  padding: 33px 43px 33px 33px;
+  letter-spacing: 0.01em;
+}
+
+#contact form .upload .upload-btn + label {
+  display: inline-block;
+}
+
+#contact form input,
+#contact form select,
+#contact form textarea {
+  font-family: Raleway;
+  color: #36353d;
+  font-size: 15px;
+  background: none;
+  border-bottom: 1px solid #36353d;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  padding: 6px 0 9px 17px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+}
+
+#contact form textarea {
+  padding: 5px 0 48px 26px;
+}
+
+#contact form select {
+  padding: 6px 0 9px 22px;
+}
+
+#contact form option {
+  background-color: #1d1c21;
+  border-bottom: 1px solid #36353d;
+}
+
+#contact form .select-label {
+  margin-top: 27px;
+}
+
+#contact form button {
+  font-family: Raleway;
+  color: #d8d8d9;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #d8d8d9;
+  font-weight: 600;
+  background: none;
+  line-height: 19px;
+  width: 180px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  align-self: center;
+}
+
+#contact form button .plus {
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 300;
+  margin-left: 12px;
+}
+
+#contact .map-section {
+  display: flex;
+  justify-content: space-between;
+  height: 317px;
+  background-color: #c4c4c4;
+  margin-top: 80px;
+}
+
+#contact .map-section .social-icons {
+  width: 22%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+#contact .map-section .social-icons img {
+  width: 20px;
+}
+
+#contact .map-section .map-info {
+  margin-left: auto;
+  margin-right: auto;
+  width: 26%;
+  margin-top: 20px;
+}
+
+#contact .map-section .map-info div {
+  margin-top: 12px;
+}
+
+#contact .map-section h4 {
+  font-family: Playfair Display SC;
+  color: #1d1c21;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+#contact .map-section p {
+  font-family: Raleway;
+  color: #1d1c21;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
 
 .footer {
   width: 1134px;
   margin-left: auto;
-  margin-right: auto; }
-  .footer ul {
-    display: flex;
-    flex-direction: row;
-    border-bottom: 1px solid #F6F6F6;
-    border-top: 1px solid #F6F6F6;
-    list-style: none;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    padding: 20px 0; }
-    .footer ul a {
-      font-family: Raleway;
-      color: #F6F6F6;
-      font-size: 15px;
-      letter-spacing: 0.01em; }
-    .footer ul a:hover {
-      color: #FF0E0E; }
-  .footer .footer-bottom {
-    font-family: Raleway;
-    color: #89898B;
-    font-size: 13px;
-    display: flex;
-    justify-content: space-between; }
-    .footer .footer-bottom p {
-      letter-spacing: 0.01em;
-      margin: 9px 0; }
-    .footer .footer-bottom .social-icons {
-      display: flex;
-      justify-content: space-between;
-      width: 60px; }
-      .footer .footer-bottom .social-icons img {
-        width: 15px; }
+  margin-right: auto;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #f6f6f6;
+  border-top: 1px solid #f6f6f6;
+  list-style: none;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 20px 0;
+}
+
+.footer ul a {
+  font-family: Raleway;
+  color: #f6f6f6;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+}
+
+.footer ul a:hover {
+  color: #ff0e0e;
+}
+
+.footer .footer-bottom {
+  font-family: Raleway;
+  color: #89898b;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer-bottom p {
+  letter-spacing: 0.01em;
+  margin: 9px 0;
+}
+
+.footer .footer-bottom .social-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+}
+
+.footer .footer-bottom .social-icons img {
+  width: 15px;
+}
 
 body {
-  background-color: #1D1C21;
+  background-color: #1d1c21;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 @media only screen and (min-width: 1441px) {
   #home {
     background-size: cover;
-    height: 664px; }
-    #home .mask-color {
-      height: 664px; }
+    height: 664px;
+  }
+
+  #home .mask-color {
+    height: 664px;
+  }
 
   #awards .inner-awards {
-    background-size: cover; }
+    background-size: cover;
+  }
+
   #awards .layer {
     margin-left: auto;
     margin-right: auto;
-    width: 60%; }
-  #awards .award, #awards .award-middle {
-    width: 33%;
-    justify-content: center; }
+    width: 60%;
+  }
+
+  #awards .award,
   #awards .award-middle {
-    margin: 0; }
+    width: 33%;
+    justify-content: center;
+  }
+
+  #awards .award-middle {
+    margin: 0;
+  }
 
   #about-us .about-main {
-    background-size: cover; }
-  #about-us .container {
-    position: relative; }
-  #about-us img {
-    left: 43%; } }
-@media only screen and (max-width: 1430px) and (min-width: 1024px) {
-  #home {
     background-size: cover;
-    height: 664px; }
-    #home .mask-color {
-      height: 664px; }
-    #home .home-content {
-      width: 90%; }
-    #home nav {
-      width: 100%; }
+  }
 
-  #artists {
-    width: 90%; }
-    #artists img {
-      width: 200px; }
-    #artists h3 {
-      font-size: 20px !important; }
-
-  #awards .inner-awards {
-    background-size: cover; }
-  #awards .layer {
-    margin-left: auto;
-    margin-right: auto;
-    width: 96%; }
-  #awards .award, #awards .award-middle {
-    width: 32%;
-    justify-content: center; }
-  #awards .award-middle {
-    margin: 0; }
-    #awards .award-middle p {
-      width: 100%; }
-
-  #featured {
-    width: 90%; }
-    #featured img {
-      width: 200px; }
+  #about-us .container {
+    position: relative;
+  }
 
   #about-us img {
     left: 43%;
-    width: 500px; }
-  #about-us .container {
-    width: 90%;
-    position: relative; }
-  #about-us .about {
-    width: 385px; }
-    #about-us .about p {
-      font-size: 13px; }
+  }
+}
 
-  #instagram .collection {
-    display: flex;
-    flex-direction: column;
-    width: 866px; }
-  #instagram .big-col {
-    display: none; }
-  #instagram .small-col {
-    justify-content: center; }
-    #instagram .small-col img {
-      margin-left: 15px;
-      margin-right: 0; }
-
-  #contact {
-    width: 90%; }
-
-  footer {
-    width: 90% !important; }
-    footer .footer-bottom {
-      font-size: 11px !important; } }
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
+@media only screen and (max-width: 1430px) and (min-width: 1024px) {
   #home {
     background-size: cover;
-    height: 664px; }
-    #home .mask-color {
-      height: 664px; }
-    #home .home-content {
-      width: 95%; }
-    #home nav {
-      width: 100%; }
-      #home nav li {
-        font-size: 12px; }
-    #home .logo-column {
-      margin-right: 25px !important; }
+    height: 664px;
+  }
+
+  #home .mask-color {
+    height: 664px;
+  }
+
+  #home .home-content {
+    width: 90%;
+  }
+
+  #home nav {
+    width: 100%;
+  }
 
   #artists {
-    width: 90%; }
-    #artists img {
-      width: 150px; }
-    #artists .read {
-      flex-direction: column; }
-    #artists .artists-main div {
-      width: 90%; }
+    width: 90%;
+  }
+
+  #artists img {
+    width: 200px;
+  }
+
+  #artists h3 {
+    font-size: 20px !important;
+  }
 
   #awards .inner-awards {
-    background-size: cover; }
+    background-size: cover;
+  }
+
   #awards .layer {
     margin-left: auto;
     margin-right: auto;
-    width: 96%; }
-  #awards .award, #awards .award-middle {
-    width: 32%;
-    justify-content: center; }
-    #awards .award img, #awards .award-middle img {
-      width: 25%; }
-  #awards .award-text h3 {
-    font-size: 14px; }
-  #awards .award-text p {
-    font-size: 12px; }
+    width: 96%;
+  }
+
+  #awards .award,
   #awards .award-middle {
-    margin: 0; }
-    #awards .award-middle p {
-      width: 100%; }
+    width: 32%;
+    justify-content: center;
+  }
+
+  #awards .award-middle {
+    margin: 0;
+  }
+
+  #awards .award-middle p {
+    width: 100%;
+  }
 
   #featured {
-    width: 90%; }
-    #featured .featured-main {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-    #featured .right-col {
-      margin-right: 0; }
+    width: 90%;
+  }
+
+  #featured img {
+    width: 200px;
+  }
 
   #about-us img {
-    display: none; }
-  #about-us .container {
-    width: 80%;
-    position: relative; }
-  #about-us .about {
-    width: 385px; }
-    #about-us .about p {
-      font-size: 13px; }
+    left: 43%;
+    width: 500px;
+  }
 
-  #instagram h2 {
-    font-size: 36px; }
+  #about-us .container {
+    width: 90%;
+    position: relative;
+  }
+
+  #about-us .about {
+    width: 385px;
+  }
+
+  #about-us .about p {
+    font-size: 13px;
+  }
+
   #instagram .collection {
     display: flex;
     flex-direction: column;
-    width: 760px; }
+    width: 866px;
+  }
+
   #instagram .big-col {
-    display: none; }
+    display: none;
+  }
+
   #instagram .small-col {
-    justify-content: center; }
-    #instagram .small-col img {
-      margin-left: 15px !important;
-      margin-right: 0 !important; }
+    justify-content: center;
+  }
+
+  #instagram .small-col img {
+    margin-left: 15px;
+    margin-right: 0;
+  }
 
   #contact {
-    width: 80%; }
-    #contact .map-section {
-      margin-left: auto;
-      margin-right: auto;
-      width: 70%;
-      flex-direction: column;
-      height: 568px; }
-    #contact .map-info {
-      margin-left: auto;
-      margin-right: auto;
-      width: 70% !important;
-      margin-bottom: 20px !important; }
-    #contact h4 {
-      font-size: 12px !important; }
-    #contact p {
-      font-size: 13px !important; }
+    width: 90%;
+  }
 
   footer {
-    width: 95% !important; }
-    footer ul {
-      font-size: 13px !important; }
-    footer .footer-bottom {
-      font-size: 11px !important; } }
+    width: 90% !important;
+  }
+
+  footer .footer-bottom {
+    font-size: 11px !important;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  #home {
+    background-size: cover;
+    height: 664px;
+  }
+
+  #home .mask-color {
+    height: 664px;
+  }
+
+  #home .home-content {
+    width: 95%;
+  }
+
+  #home nav {
+    width: 100%;
+  }
+
+  #home nav li {
+    font-size: 12px;
+  }
+
+  #home .logo-column {
+    margin-right: 25px !important;
+  }
+
+  #artists {
+    width: 90%;
+  }
+
+  #artists img {
+    width: 150px;
+  }
+
+  #artists .read {
+    flex-direction: column;
+  }
+
+  #artists .artists-main div {
+    width: 90%;
+  }
+
+  #contact {
+    width: 80%;
+  }
+
+  #contact .map-section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    flex-direction: column;
+    height: 568px;
+  }
+
+  #contact .map-info {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70% !important;
+    margin-bottom: 20px !important;
+  }
+
+  #contact h4 {
+    font-size: 12px !important;
+  }
+
+  #contact p {
+    font-size: 13px !important;
+  }
+
+  #about-us img {
+    display: none;
+  }
+
+  #about-us .container {
+    width: 80%;
+    position: relative;
+  }
+
+  #about-us .about {
+    width: 385px;
+  }
+
+  #about-us .about p {
+    font-size: 13px;
+  }
+
+  #awards .inner-awards {
+    background-size: cover;
+  }
+
+  #awards .layer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 96%;
+  }
+
+  #awards .award,
+  #awards .award-middle {
+    width: 32%;
+    justify-content: center;
+  }
+
+  #awards .award img,
+  #awards .award-middle img {
+    width: 25%;
+  }
+
+  #awards .award-text h3 {
+    font-size: 14px;
+  }
+
+  #awards .award-text p {
+    font-size: 12px;
+  }
+
+  #awards .award-middle {
+    margin: 0;
+  }
+
+  #awards .award-middle p {
+    width: 100%;
+  }
+
+  #featured {
+    width: 90%;
+  }
+
+  #featured .featured-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #featured .right-col {
+    margin-right: 0;
+  }
+
+  #instagram h2 {
+    font-size: 36px;
+  }
+
+  #instagram .collection {
+    display: flex;
+    flex-direction: column;
+    width: 760px;
+  }
+
+  #instagram .big-col {
+    display: none;
+  }
+
+  #instagram .small-col {
+    justify-content: center;
+  }
+
+  #instagram .small-col img {
+    margin-left: 15px !important;
+    margin-right: 0 !important;
+  }
+
+  footer {
+    width: 95% !important;
+  }
+
+  footer ul {
+    font-size: 13px !important;
+  }
+
+  footer .footer-bottom {
+    font-size: 11px !important;
+  }
+}
+
 @media only screen and (max-width: 767px) {
-  .mask .mask-color, #home, .home-content {
+  .mask .mask-color,
+  #home,
+  .home-content {
     background: none;
     width: 100%;
-    margin-top: 0 !important; }
+    margin-top: 0 !important;
+  }
+
+  footer {
+    width: 90% !important;
+  }
+
+  footer ul {
+    display: none !important;
+  }
+
+  footer .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  #about-us {
+    width: 100%;
+    height: 100%;
+  }
+
+  #about-us img {
+    display: none;
+  }
+
+  #about-us .about {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  #about-us h2 {
+    font-size: 24px;
+  }
+
+  #about-us p {
+    font-size: 14px;
+  }
+
+  #featured {
+    width: 85%;
+  }
+
+  #featured h2 {
+    font-size: 36px;
+  }
+
+  #featured .feature-header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #featured .featured-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #featured .right-col {
+    margin-right: 0;
+  }
+
+  #featured .works-img,
+  #featured .left-col {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 0;
+  }
+
+  #featured img {
+    margin: 5px 0;
+  }
+
+  #contact {
+    width: 90%;
+  }
+
+  #contact img {
+    display: none;
+  }
+
+  #contact form {
+    width: 80%;
+  }
+
+  #contact .map-info {
+    width: 60% !important;
+  }
+
+  #contact .map-section {
+    height: 100%;
+  }
+
+  #instagram h2 {
+    font-size: 24px;
+  }
+
+  #instagram .collection {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  #instagram .big-col {
+    display: none;
+  }
+
+  #instagram .small-col {
+    justify-content: center;
+  }
+
+  #instagram .small-col img {
+    margin-left: 5px !important;
+    margin-right: 0 !important;
+  }
 
   #home {
-    height: 900px; }
-    #home nav {
-      width: 100%;
-      border-bottom: none; }
-      #home nav ul {
-        flex-direction: column;
-        width: 100%;
-        align-items: center; }
-      #home nav li {
-        border-bottom: 1px solid #F6F6F6;
-        padding: 10px 0;
-        width: 100%;
-        text-align: center; }
-    #home .winner-part img {
-      display: none; }
-    #home .winner-part .logo-column {
-      margin-left: auto;
-      margin-right: auto; }
-      #home .winner-part .logo-column img {
-        display: block; }
+    height: 900px;
+  }
+
+  #home nav {
+    width: 100%;
+    border-bottom: none;
+  }
+
+  #home nav ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  #home nav li {
+    border-bottom: 1px solid #f6f6f6;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  #home .winner-part img {
+    display: none;
+  }
+
+  #home .winner-part .logo-column {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #home .winner-part .logo-column img {
+    display: block;
+  }
 
   #artists {
     width: 90%;
     height: 100%;
-    margin-bottom: 20px; }
-    #artists h2 {
-      text-align: center;
-      font-size: 48px; }
-    #artists .artists-main {
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap; }
+    margin-bottom: 20px;
+  }
+
+  #artists h2 {
+    text-align: center;
+    font-size: 48px;
+  }
+
+  #artists .artists-main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 
   #awards {
-    height: 100%; }
-    #awards .inner-awards {
-      background: none;
-      height: 100%; }
-    #awards .layer {
-      margin-left: auto;
-      margin-right: auto;
-      flex-wrap: wrap;
-      width: 50%;
-      padding: 15px 0;
-      height: 100%; }
-    #awards .award, #awards .award-middle {
-      width: 100%; }
-    #awards .award-middle {
-      margin-left: 0; }
+    height: 100%;
+  }
 
-  #featured {
-    width: 85%; }
-    #featured h2 {
-      font-size: 36px; }
-    #featured .feature-header {
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      flex-direction: column; }
-    #featured .featured-main {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-    #featured .right-col {
-      margin-right: 0; }
-    #featured .works-img, #featured .left-col {
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      margin-top: 0px; }
-    #featured img {
-      margin: 5px 0; }
+  #awards .inner-awards {
+    background: none;
+    height: 100%;
+  }
 
-  #about-us {
+  #awards .layer {
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 15px 0;
+    height: 100%;
+  }
+
+  #awards .award,
+  #awards .award-middle {
     width: 100%;
-    height: 100%; }
-    #about-us img {
-      display: none; }
-    #about-us .about {
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%; }
-    #about-us h2 {
-      font-size: 24px; }
-    #about-us p {
-      font-size: 14px; }
+  }
 
-  #instagram h2 {
-    font-size: 24px; }
-  #instagram .collection {
-    display: flex;
-    flex-direction: column;
-    width: 90%; }
-  #instagram .big-col {
-    display: none; }
-  #instagram .small-col {
-    justify-content: center; }
-    #instagram .small-col img {
-      margin-left: 5px !important;
-      margin-right: 0 !important; }
-
-  #contact {
-    width: 90%; }
-    #contact img {
-      display: none; }
-    #contact form {
-      width: 80%; }
-    #contact .map-info {
-      width: 60% !important; }
-    #contact .map-section {
-      height: 100%; }
-
-  footer {
-    width: 90% !important; }
-    footer ul {
-      display: none !important; }
-    footer .footer-bottom {
-      display: flex;
-      flex-direction: column;
-      padding: 10px 0; } }
-
-/*# sourceMappingURL=style.css.map */
+  #awards .award-middle {
+    margin-left: 0;
+  }
+}

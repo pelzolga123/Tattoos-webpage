@@ -1,66 +1,72 @@
 @import "../helpers/mixins";
 @import "../helpers/variables";
 
-#artists{
-    @include margin-auto;
-    height: 627px;
-    width: 1134px;
+#artists {
+  @include margin-auto;
 
-    h2{
-        @include font(58px, Playfair Display SC, $font-gray);
-        font-weight: 900;
-        line-height: 65px;
+  height: 627px;
+  width: 1134px;
+
+  h2 {
+    @include font(58px, Playfair Display SC, $font-gray);
+
+    font-weight: 900;
+    line-height: 65px;
+    letter-spacing: 0.01em;
+    margin-bottom: 28px;
+  }
+
+  .artists-main {
+    display: flex;
+    justify-content: space-between;
+
+    .plus-btn {
+      @include font(14px, Raleway, $red-color);
+
+      border: 1px solid $red-color;
+      background: none;
+      width: 11.45px;
+      height: 11.45px;
+    }
+
+    h3 {
+      @include font(24px, Playfair Display SC, $border-color);
+
+      font-weight: 900;
+      line-height: 32px;
+      letter-spacing: 0.01em;
+      margin: 0;
+    }
+
+    .read {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+
+      span {
+        @include font(15px, Raleway, $border-color);
+
+        line-height: 18px;
         letter-spacing: 0.01em;
-        margin-bottom: 28px;
-    }
+      }
 
-    .artists-main{
+      a {
+        @include font(11px, Raleway, $border-color);
+        @include plus-btn($border-color);
+
+        margin-bottom: 2px;
+      }
+
+      a:hover {
+        color: $red-color;
+        border-color: $red-color;
+      }
+
+      .read-btn {
+        align-items: center;
         display: flex;
-        justify-content: space-between;
-
-        .plus-btn{
-            @include font(14px, Raleway, $red-color);
-            border: 1px solid $red-color;
-            background: none;
-            width: 11.45px;
-            height: 11.45px;
-        }
-
-        h3{
-            @include font(24px, Playfair Display SC, $border-color);
-            font-weight: 900;
-            line-height: 32px;
-            letter-spacing: 0.01em;
-            margin:0;
-        }
-
-        .read{
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 2px;
-
-            span{
-                @include font(15px, Raleway, $border-color);
-                line-height: 18px;
-                letter-spacing: 0.01em;
-            }
-
-            a{
-                @include font(11px, Raleway, $border-color);
-                @include plus-btn($border-color);
-                margin-bottom: 2px;
-            }
-
-            a:hover{
-                color: $red-color;
-                border-color: $red-color;
-            }
-            
-            .read-btn{
-                align-items: center;
-                display: flex;
-            }
-        }
+      }
     }
+  }
 }
