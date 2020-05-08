@@ -652,9 +652,9 @@ a {
       font-size: 13px; }
 
   #instagram .collection {
-    width: 866px;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 866px; }
   #instagram .big-col {
     display: none; }
   #instagram .small-col {
@@ -736,9 +736,9 @@ a {
   #instagram h2 {
     font-size: 36px; }
   #instagram .collection {
-    width: 760px;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 760px; }
   #instagram .big-col {
     display: none; }
   #instagram .small-col {
@@ -750,15 +750,15 @@ a {
   #contact {
     width: 80%; }
     #contact .map-section {
-      width: 70%;
       margin-left: auto;
       margin-right: auto;
+      width: 70%;
       flex-direction: column;
       height: 568px; }
     #contact .map-info {
-      width: 70% !important;
       margin-left: auto;
       margin-right: auto;
+      width: 70% !important;
       margin-bottom: 20px !important; }
     #contact h4 {
       font-size: 12px !important; }
@@ -817,10 +817,10 @@ a {
       background: none;
       height: 100%; }
     #awards .layer {
-      flex-wrap: wrap;
-      width: 50%;
       margin-left: auto;
       margin-right: auto;
+      flex-wrap: wrap;
+      width: 50%;
       padding: 15px 0;
       height: 100%; }
     #awards .award, #awards .award-middle {
@@ -833,9 +833,9 @@ a {
     #featured h2 {
       font-size: 36px; }
     #featured .feature-header {
-      width: 100%;
       margin-left: auto;
       margin-right: auto;
+      width: 100%;
       flex-direction: column; }
     #featured .featured-main {
       display: flex;
@@ -844,13 +844,12 @@ a {
     #featured .right-col {
       margin-right: 0; }
     #featured .works-img, #featured .left-col {
-      width: 50%;
-      margin-right: auto;
       margin-left: auto;
+      margin-right: auto;
+      width: 50%;
       margin-top: 0px; }
     #featured img {
-      margin-top: 5px;
-      margin-bottom: 5px; }
+      margin: 5px 0; }
 
   #about-us {
     width: 100%;
@@ -858,9 +857,9 @@ a {
     #about-us img {
       display: none; }
     #about-us .about {
-      width: 50%;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      width: 50%; }
     #about-us h2 {
       font-size: 24px; }
     #about-us p {
@@ -869,9 +868,9 @@ a {
   #instagram h2 {
     font-size: 24px; }
   #instagram .collection {
-    width: 90%;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 90%; }
   #instagram .big-col {
     display: none; }
   #instagram .small-col {
