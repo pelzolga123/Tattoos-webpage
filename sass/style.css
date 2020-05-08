@@ -57,8 +57,7 @@
     #home nav a {
       font-family: Raleway;
       color: #F6F6F6;
-      font-size: 15px;
-      text-decoration: none; }
+      font-size: 15px; }
     #home nav a:hover {
       color: #FF0E0E; }
   #home .winner-part {
@@ -100,7 +99,6 @@
         line-height: 19px;
         margin-right: 3px;
         margin-top: 41px;
-        text-decoration: none;
         width: 180px; }
         #home .winner-part .logo-column .btn .plus {
           font-size: 34px;
@@ -161,9 +159,9 @@
         height: 11.45px;
         padding: 0px;
         margin-left: 8px;
-        margin-bottom: 2px;
         text-align: center;
-        font-weight: 600; }
+        font-weight: 600;
+        margin-bottom: 2px; }
       #artists .artists-main .read a:hover {
         color: #FF0E0E;
         border-color: #FF0E0E; }
@@ -229,9 +227,9 @@
       height: 11.45px;
       padding: 0px;
       margin-left: 8px;
-      margin-bottom: 4px;
       text-align: center;
-      font-weight: 600; }
+      font-weight: 600;
+      margin-bottom: 4px; }
     #awards .award a:hover, #awards .award-middle a:hover {
       color: #FF0E0E;
       border-color: #FF0E0E; }
@@ -283,11 +281,11 @@
       background: none;
       width: 11.45px;
       height: 11.45px;
-      font-weight: 600;
       padding: 0px;
       margin-left: 8px;
-      margin-bottom: 4px;
-      text-align: center; }
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 4px; }
     #featured .read a:hover {
       color: #FF0E0E;
       border-color: #FF0E0E; }
@@ -307,33 +305,22 @@
   #featured .left-col {
     margin-top: 22px; }
 
-body {
-  background-color: #1D1C21;
-  margin: 0;
-  padding: 0; }
-
-html {
-  scroll-behavior: smooth; }
-
-a {
-  text-decoration: none; }
-
 #about-us {
   background-color: lightgray;
   height: 430px; }
   #about-us h2 {
     font-family: Playfair Display SC;
-    font-weight: 900;
-    font-size: 55px;
-    letter-spacing: 0.05em;
     color: #89898B;
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
     margin: 0; }
   #about-us p {
     font-family: Raleway;
+    color: #1D1C21;
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 0.01em;
-    color: #1D1C21;
     margin: 0; }
   #about-us .paragraphs {
     display: flex;
@@ -346,14 +333,14 @@ a {
     background: url("../images/about_us/background_img.svg") no-repeat;
     display: flex; }
   #about-us .container {
-    display: flex;
-    width: 1134px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    display: flex;
+    width: 1134px; }
   #about-us .about {
-    width: 455px;
     display: flex;
     flex-direction: column;
+    width: 455px;
     justify-content: center; }
   #about-us img {
     position: absolute;
@@ -361,15 +348,15 @@ a {
     left: 632px; }
 
 #instagram .collection {
-  width: 1134px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  width: 1134px; }
 #instagram h2 {
   font-family: Playfair Display SC;
-  font-weight: 900;
-  font-size: 56px;
-  line-height: 81px;
   color: #89898B;
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 81px;
   text-align: center;
   margin-top: 84px;
   margin-bottom: 22px;
@@ -388,58 +375,63 @@ a {
 #instagram .first-row, #instagram .second-row {
   display: flex; }
 #instagram .show-btn {
-  width: 101px;
   margin-left: auto;
   margin-right: auto;
+  width: 101px;
   margin-top: 20px;
   display: flex; }
   #instagram .show-btn span {
     font-family: Raleway;
+    color: #F6F6F6;
     font-size: 15px;
+    font-family: Raleway;
     line-height: 18px;
-    letter-spacing: 0.01em;
-    color: #F6F6F6; }
+    letter-spacing: 0.01em; }
   #instagram .show-btn a {
-    color: #FF0e0e;
-    border: 1px solid #FF0e0e;
+    font-family: Raleway;
+    color: #F6F6F6;
+    font-size: 11px;
+    border: 1px solid #F6F6F6;
     background: none;
     width: 11.45px;
     height: 11.45px;
-    font-size: 9px;
     padding: 0px;
     margin-left: 8px;
-    margin-bottom: 2px;
-    text-align: center; }
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2px; }
+  #instagram .show-btn a:hover {
+    color: #FF0E0E;
+    border-color: #FF0E0E; }
 
 #contact {
-  width: 1134px;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
+  width: 1134px;
   margin-bottom: 80px;
   margin-top: 81px; }
   #contact h3 {
     font-family: Playfair Display SC;
-    font-weight: 900;
+    color: #F6F6F6;
     font-size: 24px;
+    font-weight: 900;
     line-height: 32px;
     text-align: center;
     letter-spacing: 0.01em;
-    color: #F6F6F6;
     margin-bottom: 19px; }
   #contact label {
     font-family: Raleway;
+    color: #F6F6F6;
     font-size: 15px;
     line-height: 18px;
-    letter-spacing: 0.01em;
-    color: #F6F6F6; }
+    letter-spacing: 0.01em; }
   #contact form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 80px;
-    width: 540px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 19px; }
+    margin-bottom: 80px;
+    width: 540px; }
     #contact form .upload {
       display: flex;
       justify-content: center; }
@@ -454,28 +446,26 @@ a {
       #contact form .upload .upload-btn + label {
         display: inline-block; }
       #contact form .upload label {
+        font-family: Raleway;
+        color: #F6F6F6;
+        font-size: 15px;
         cursor: pointer;
         background: url(../images/upload.svg) no-repeat;
         background-position: 136px;
-        padding: 33px;
-        font-family: Raleway;
-        font-size: 15px;
-        letter-spacing: 0.01em;
-        color: #F6F6F6;
-        padding-right: 43px;
-        padding-left: 33px; }
+        padding: 33px 43px 33px 33px;
+        letter-spacing: 0.01em; }
     #contact form input, #contact form select, #contact form textarea {
+      font-family: Raleway;
+      color: #36353D;
+      font-size: 15px;
       background: none;
       border-bottom: 1px solid #36353D;
       border-top: none;
       border-right: none;
       border-left: none;
       padding: 6px 0 9px 17px;
-      font-family: Raleway;
-      font-size: 15px;
       line-height: 18px;
-      letter-spacing: 0.01em;
-      color: #36353D; }
+      letter-spacing: 0.01em; }
     #contact form textarea {
       padding: 5px 0 48px 26px; }
     #contact form select {
@@ -486,17 +476,16 @@ a {
     #contact form .select-label {
       margin-top: 27px; }
     #contact form button {
-      color: #d8d8d9;
-      border: 2px solid #d8d8d9;
-      box-sizing: border-box;
       font-family: Raleway;
-      font-weight: 600;
+      color: #d8d8d9;
       font-size: 16px;
+      display: flex;
+      flex-direction: row;
+      border: 2px solid #d8d8d9;
+      font-weight: 600;
       background: none;
       line-height: 19px;
       width: 180px;
-      display: flex;
-      flex-direction: row;
       align-items: center;
       justify-content: center;
       margin-top: 8px;
@@ -520,57 +509,52 @@ a {
       #contact .map-section .social-icons img {
         width: 20px; }
     #contact .map-section .map-info {
-      width: 26%;
       margin-left: auto;
       margin-right: auto;
+      width: 26%;
       margin-top: 20px; }
       #contact .map-section .map-info div {
         margin-top: 12px; }
     #contact .map-section h4 {
       font-family: Playfair Display SC;
-      font-weight: 900;
+      color: #1D1C21;
       font-size: 14px;
+      font-weight: 900;
       line-height: 19px;
       letter-spacing: 0.01em;
-      margin: 0;
-      color: #1D1C21; }
+      margin: 0; }
     #contact .map-section p {
       font-family: Raleway;
-      font-style: normal;
-      font-weight: normal;
+      color: #1D1C21;
       font-size: 15px;
       line-height: 18px;
       letter-spacing: 0.01em;
-      margin: 0;
-      color: #1D1C21; }
+      margin: 0; }
 
 .footer {
   width: 1134px;
   margin-left: auto;
   margin-right: auto; }
   .footer ul {
+    display: flex;
+    flex-direction: row;
     border-bottom: 1px solid #F6F6F6;
     border-top: 1px solid #F6F6F6;
     list-style: none;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    padding: 0;
     margin-bottom: 10px;
     padding: 20px 0; }
     .footer ul a {
-      letter-spacing: 0.01em;
       font-family: Raleway;
       color: #F6F6F6;
       font-size: 15px;
-      text-decoration: none; }
+      letter-spacing: 0.01em; }
     .footer ul a:hover {
       color: #FF0E0E; }
   .footer .footer-bottom {
+    font-family: Raleway;
     color: #89898B;
     font-size: 13px;
-    font-family: Raleway;
-    font-style: normal;
     display: flex;
     justify-content: space-between; }
     .footer .footer-bottom p {
@@ -578,10 +562,21 @@ a {
       margin: 9px 0; }
     .footer .footer-bottom .social-icons {
       display: flex;
-      width: 60px;
-      justify-content: space-between; }
+      justify-content: space-between;
+      width: 60px; }
       .footer .footer-bottom .social-icons img {
         width: 15px; }
+
+body {
+  background-color: #1D1C21;
+  margin: 0;
+  padding: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none; }
 
 @media only screen and (min-width: 1441px) {
   #home {

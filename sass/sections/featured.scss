@@ -37,15 +37,8 @@
         }
 
         a{  @include font(11px, Raleway, $border-color);
-            border: 1px solid $border-color;
-            background: none;
-            width: 11.45px;
-            height: 11.45px;
-            font-weight: 600;
-            padding: 0px;
-            margin-left: 8px;
+            @include plus-btn($border-color);
             margin-bottom: 4px;
-            text-align: center;
         }
 
         a:hover{

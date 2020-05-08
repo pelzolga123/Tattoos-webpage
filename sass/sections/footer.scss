@@ -1,0 +1,46 @@
+@import "../helpers/mixins";
+@import "../helpers/variables";
+
+.footer{      
+    width: 1134px;
+    @include margin-auto;
+
+    ul{
+        @include flex-row;
+        border-bottom: 1px solid #F6F6F6;
+        border-top: 1px solid #F6F6F6;
+        list-style: none;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding: 20px 0;
+
+        a{
+            @include font(15px, Raleway, $border-color);
+            letter-spacing: 0.01em;
+        }
+
+        a:hover{
+            color: $red-color;
+        }
+    }
+
+    .footer-bottom{
+        @include font(13px, Raleway, $font-gray);
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            letter-spacing: 0.01em;
+            margin: 9px 0;
+        }
+        .social-icons{
+            display: flex;
+            justify-content: space-between;
+            width: 60px;
+
+            img{
+                width: 15px;
+            }
+        }
+    }
+}

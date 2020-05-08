@@ -43,7 +43,6 @@
         
         a{
             @include font(15px, Raleway, $border-color);
-            text-decoration: none;
         }
 
         a:hover{
@@ -84,13 +83,12 @@
                 @include flex-row; 
                 align-items: center;
                 background: none;
-                border: 2px solid #d8d8d9;
+                border: 2px solid $font-light;
                 font-weight: 600;
                 justify-content: center;
                 line-height: 19px;
                 margin-right: 3px;
                 margin-top: 41px;
-                text-decoration: none;
                 width: 180px;
 
                 .plus{

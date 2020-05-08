@@ -1,0 +1,77 @@
+@import "../helpers/mixins";
+@import "../helpers/variables";
+
+#instagram{
+
+    .collection{
+        @include margin-auto;
+        width: 1134px;
+    }
+
+    h2{
+        @include font(56px, Playfair Display SC, $font-gray);
+        font-weight: 900;
+        line-height: 81px;
+        text-align: center;
+        margin-top: 84px;
+        margin-bottom: 22px;
+        letter-spacing: 0.02em;
+    }
+
+    .small-col{
+        display: flex;
+        flex-wrap: wrap;
+
+        img{
+            margin-left: 11px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .second-row{
+
+        .small-col{
+
+            img{
+                margin-right: 11px;
+                margin-left: 0px;
+            }
+        }
+
+        .big-col{
+
+            img{
+                margin-left: 0;
+            }
+        }
+    }
+
+    .first-row, .second-row{
+        display: flex;
+    }
+
+    .show-btn{
+        @include margin-auto;
+        width: 101px;
+        margin-top: 20px;
+        display: flex;
+
+        span{
+            @include font(15px, Raleway, $border-color);
+            font-family: Raleway;
+            line-height: 18px;
+            letter-spacing: 0.01em;
+        }
+
+        a{
+            @include font(11px, Raleway, $border-color);
+            @include plus-btn($border-color);
+            margin-bottom: 2px;
+        }
+
+        a:hover{
+            color: $red-color;
+            border-color: $red-color;
+        }
+    }
+}

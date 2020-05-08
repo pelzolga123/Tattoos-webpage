@@ -63,15 +63,8 @@
         }
         a{
             @include font(11px, Raleway, $background-main);
-            border: 1px solid $background-main;
-            background: none;
-            width: 11.45px;
-            height: 11.45px;
-            padding: 0px;
-            margin-left: 8px;
+            @include plus-btn($background-main);    
             margin-bottom: 4px;
-            text-align: center;
-            font-weight: 600;
         }
 
         a:hover{
