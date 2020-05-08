@@ -1,14 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@900&family=Raleway:wght@400;600&display=swap");
-body {
-  background-color: #1D1C21;
-  margin: 0;
-  padding: 0; }
+#lightbox {
+  position: fixed;
+  display: none;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(211, 211, 211, 0.6); }
+  #lightbox div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
 
-html {
-  scroll-behavior: smooth; }
-
-a {
-  text-decoration: none; }
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #lightbox.active .close-btn {
+    position: absolute;
+    border: none;
+    cursor: pointer; }
 
 #home {
   background: url("../images/home_background.svg") no-repeat;
@@ -99,6 +110,17 @@ a {
           line-height: 40px;
           font-weight: 300;
           margin-left: 12px; }
+
+body {
+  background-color: #1D1C21;
+  margin: 0;
+  padding: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none; }
 
 #artists {
   width: 1134px;
@@ -231,6 +253,8 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 178px; }
+  #featured img {
+    cursor: pointer; }
   #featured h2 {
     margin-top: 85px;
     font-family: Playfair Display SC;

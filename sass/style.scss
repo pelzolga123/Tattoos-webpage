@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@900&family=Raleway:wght@400;600&display=swap');
+@import './helpers/mixins';
+@import "./helpers/variables";
+@import "./helpers/lightbox";
+@import "./sections/home";
 
-$background-main: #1D1C21;
 
 body{
     background-color: $background-main;
@@ -14,120 +17,6 @@ a {
     text-decoration: none;
 }
 
-
-#home{
-    background: url('../images/home_background.svg') no-repeat;
-    background-size: contain;
-    height: 712px;
-    display: flex;
-
-    .mask{
-       background: url('../images/test.svg') no-repeat;
-       background-size: contain;
-       width: 906px;
-       display: flex;
-    }
-
-    .mask-color{
-        display: flex;
-        background-color: rgba(29, 28, 33, 0.7);
-        width: 100%;
-        position: absolute;
-        height: 670px;
-    }
-    .home-content{
-        width: 1156px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
-    nav{      
-        border-bottom: 1px solid #F6F6F6;
-        width: 1134px;
-        margin-left: auto;
-        margin-right: auto;
-
-        ul{
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 0;
-            margin-bottom: 10px;
-        }
-        a{
-            font-family: Raleway;
-            color: #F6F6F6;
-            font-size: 15px;
-            text-decoration: none;
-        }
-        a:hover{
-            color: #FF0E0E;
-        }
-    }
-
-    .winner-part{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 8px;
-        align-items: end;
-
-        .social-icons{
-            display: flex;
-            flex-direction: column;
-            margin-right: 10px;
-            
-            img{
-                margin-bottom: 10px;
-                margin-top: 10px;
-            }
-        }
-        .logo-column{
-            margin-top: 48px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-right: 85px;
-
-            h3{
-                font-family: Playfair Display SC;
-                font-style: normal;
-                font-weight: 900;
-                font-size: 18px;
-                color: #fff;
-                margin-top:0;
-                margin-right: 3px;
-            }
-
-            .btn{
-                color: #d8d8d9;
-                border: 2px solid #d8d8d9;
-                box-sizing: border-box;
-                font-family: Raleway;
-                font-weight: 600;
-                font-size: 16px;
-                background: none;
-                line-height: 19px;
-                width: 180px;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                margin-top: 41px;
-                margin-right: 3px;
-                text-decoration: none;
-                
-                .plus{
-                    font-size: 34px;
-                    line-height: 40px;
-                    font-weight: 300;
-                    margin-left: 12px;
-                }
-            }
-        }
-    }
-}
 
 #artists{
     width: 1134px;
@@ -237,7 +126,7 @@ a {
         }    
         h3{
             font-family: Playfair Display SC;
-            color: #1D1C21;
+            color: $background-main;
             font-weight: 900;
             font-size: 24px;
             line-height: 32px;
@@ -249,7 +138,7 @@ a {
             font-size: 15px;
             line-height: 18px;
             letter-spacing: 0.01em;
-            color: #1D1C21;
+            color: $background-main;
             width: 80%;
             margin: 0;
         }
@@ -291,7 +180,9 @@ a {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 178px;
-
+    img{
+        cursor: pointer;
+    }
     h2{
         margin-top: 85px;
         font-family: Playfair Display SC;
@@ -375,7 +266,7 @@ a {
         font-size: 15px;
         line-height: 18px;
         letter-spacing: 0.01em;
-        color: #1D1C21;
+        color: $background-main;
         margin: 0;
     }
     .paragraphs{
@@ -565,7 +456,7 @@ a {
             padding: 6px 0 9px 22px;
         }
         option{
-            background-color: #1D1C21;
+            background-color: $background-main;
             border-bottom: 1px solid #36353D;
         }
         .select-label{
@@ -633,7 +524,7 @@ a {
             line-height: 19px;
             letter-spacing: 0.01em;
             margin: 0;
-            color: #1D1C21;
+            color: $background-main;
         }
         p{
             font-family: Raleway;
@@ -643,7 +534,7 @@ a {
             line-height: 18px;
             letter-spacing: 0.01em;
             margin: 0;
-            color: #1D1C21;
+            color: $background-main;
         }
         }
     }

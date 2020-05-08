@@ -4,22 +4,25 @@ document.body.appendChild(lightbox);
 
 const mainDiv = document.getElementById('featured-img');
 const img = mainDiv.querySelectorAll('img');
+const closeBtn = document.createElement('button');
+closeBtn.innerHTML="close";
+closeBtn.className="close-btn";
 
 img.forEach(item => {
     item.addEventListener('click', e => {
         lightbox.classList.add('active');
+        const imgDiv = document.createElement('div');
         const tmp = document.createElement('img');
-        tmp.src = img.src;
+        tmp.src = item.src;
         while(lightbox.firstChild){
             lightbox.removeChild(lightbox.firstChild);
         }
-        lightbox.appendChild(img);
+        imgDiv.appendChild(closeBtn);
+        imgDiv.appendChild(tmp);
+        lightbox.appendChild(imgDiv);
     });
 });
 
-lightbox.addEventListener('click', e => {
-    if(e.target !== e.currentTarget) {
-        return;
-    }
+closeBtn.addEventListener('click', e => {
     lightbox.classList.remove('active');
 });
