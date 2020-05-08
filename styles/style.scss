@@ -406,7 +406,7 @@ a {
     .about {
       @include margin-auto;
 
-      width: 50%;
+      width: 70%;
     }
 
     h2 {
@@ -459,6 +459,19 @@ a {
 
   #contact {
     width: 90%;
+
+    .upload {
+      @include margin-auto;
+
+      justify-content: space-between;
+      width: 80%;
+
+      label {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        font-size: 11px !important;
+      }
+    }
 
     img {
       display: none;
@@ -573,7 +586,7 @@ a {
       @include margin-auto;
 
       flex-wrap: wrap;
-      width: 50%;
+      width: 80%;
       padding: 15px 0;
       height: 100%;
     }
