@@ -29,7 +29,7 @@
 }
 
 #home {
-  background: url("../images/home_background.svg") no-repeat;
+  background: url("./images/home_background.svg") no-repeat;
   background-size: contain;
   display: flex;
   height: 712px;
@@ -37,7 +37,7 @@
 
 #home .mask {
   display: flex;
-  background: url("../images/test.svg") no-repeat;
+  background: url("./images/test.svg") no-repeat;
   background-size: contain;
   width: 906px;
 }
@@ -231,7 +231,7 @@
 
 #awards .inner-awards {
   height: 408px;
-  background: url("../images/awards/background_img.svg") no-repeat;
+  background: url("./images/awards/background_img.svg") no-repeat;
 }
 
 #awards .layer {
@@ -463,7 +463,7 @@
 
 #about-us .about-main {
   height: 430px;
-  background: url("../images/about_us/background_img.svg") no-repeat;
+  background: url("./images/about_us/background_img.svg") no-repeat;
   display: flex;
 }
 
@@ -621,7 +621,7 @@
   color: #f6f6f6;
   font-size: 15px;
   cursor: pointer;
-  background: url(../images/upload.svg) no-repeat;
+  background: url('./images/upload.svg') no-repeat;
   background-position: 136px;
   padding: 33px 43px 33px 33px;
   letter-spacing: 0.01em;
