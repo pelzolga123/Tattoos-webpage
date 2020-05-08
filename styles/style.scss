@@ -377,7 +377,7 @@ a {
   #home,
   .home-content {
     background: none;
-    width: 100%;
+    width: 100% !important;
     margin-top: 0 !important;
   }
 
@@ -445,13 +445,15 @@ a {
     .works-img,
     .left-col {
       @include margin-auto;
+      @include flex-col;
 
-      width: 50%;
+      align-items: center;
+      width: 100%;
       margin-top: 0;
     }
 
-    img {
-      margin: 5px 0;
+    .col-img {
+      margin: 10px 0 10px 0;
     }
   }
 
@@ -502,6 +504,12 @@ a {
 
   #home {
     height: 900px;
+
+    .logo-column {
+      img {
+        width: 100%;
+      }
+    }
 
     nav {
       width: 100%;
