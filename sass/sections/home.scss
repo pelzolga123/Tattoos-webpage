@@ -1,106 +1,102 @@
 @import "../helpers/mixins";
+@import "../helpers/variables";
+
 #home{
     background: url('../images/home_background.svg') no-repeat;
     background-size: contain;
-    height: 712px;
     display: flex;
+    height: 712px;
 
     .mask{
+       display: flex; 
        background: url('../images/test.svg') no-repeat;
        background-size: contain;
        width: 906px;
-       display: flex;
     }
 
     .mask-color{
-        display: flex;
         background-color: rgba(29, 28, 33, 0.7);
-        width: 100%;
-        position: absolute;
+        display: flex;
         height: 670px;
+        position: absolute;
+        width: 100%;
     }
 
     .home-content{
-        width: 1156px;
-        @include margin-auto;
+        @include margin-auto; 
         margin-top: 20px;
+        width: 1156px;
     }
 
-    nav{      
-        border-bottom: 1px solid #F6F6F6;
+    nav{
+        @include margin-auto;      
+        border-bottom: 1px solid $border-color;
         width: 1134px;
-        @include margin-auto;
 
         ul{
-            list-style: none;
             @include flex-row; 
             justify-content: space-between;
-            padding: 0;
+            list-style: none;
             margin-bottom: 10px;
+            padding: 0;
         }
+        
         a{
-            font-family: Raleway;
-            color: #F6F6F6;
-            font-size: 15px;
+            @include font(15px, Raleway, $border-color);
             text-decoration: none;
         }
+
         a:hover{
-            color: #FF0E0E;
+            color: $red-color;
         }
     }
 
     .winner-part{
         @include flex-row; 
+        align-items: end;
         justify-content: space-between;
         margin-top: 8px;
-        align-items: end;
-
+        
         .social-icons{
             @include flex-col; 
             margin-right: 10px;
             
             img{
-                margin-bottom: 10px;
-                margin-top: 10px;
+                margin: 10px 0;
             }
         }
+
         .logo-column{
+            @include flex-col;
             margin-top: 48px;
-            @include flex-col; 
             align-items: center;
             margin-right: 85px;
 
             h3{
-                font-family: Playfair Display SC;
-                font-style: normal;
+                @include font(18px, Playfair Display SC, #fff);
                 font-weight: 900;
-                font-size: 18px;
-                color: #fff;
-                margin-top:0;
                 margin-right: 3px;
+                margin-top:0; 
             }
 
             .btn{
-                color: #d8d8d9;
-                border: 2px solid #d8d8d9;
-                box-sizing: border-box;
-                font-family: Raleway;
-                font-weight: 600;
-                font-size: 16px;
-                background: none;
-                line-height: 19px;
-                width: 180px;
+                @include font(16px, Raleway, $font-light);
                 @include flex-row; 
                 align-items: center;
+                background: none;
+                border: 2px solid #d8d8d9;
+                font-weight: 600;
                 justify-content: center;
-                margin-top: 41px;
+                line-height: 19px;
                 margin-right: 3px;
+                margin-top: 41px;
                 text-decoration: none;
-                
+                width: 180px;
+
                 .plus{
                     font-size: 34px;
-                    line-height: 40px;
                     font-weight: 300;
+                    line-height: 40px;
                     margin-left: 12px;
                 }
             }

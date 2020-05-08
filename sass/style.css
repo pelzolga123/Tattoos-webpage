@@ -24,36 +24,36 @@
 #home {
   background: url("../images/home_background.svg") no-repeat;
   background-size: contain;
-  height: 712px;
-  display: flex; }
+  display: flex;
+  height: 712px; }
   #home .mask {
+    display: flex;
     background: url("../images/test.svg") no-repeat;
     background-size: contain;
-    width: 906px;
-    display: flex; }
+    width: 906px; }
   #home .mask-color {
-    display: flex;
     background-color: rgba(29, 28, 33, 0.7);
-    width: 100%;
+    display: flex;
+    height: 670px;
     position: absolute;
-    height: 670px; }
+    width: 100%; }
   #home .home-content {
-    width: 1156px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px; }
+    margin-top: 20px;
+    width: 1156px; }
   #home nav {
-    border-bottom: 1px solid #F6F6F6;
-    width: 1134px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    border-bottom: 1px solid #F6F6F6;
+    width: 1134px; }
     #home nav ul {
-      list-style: none;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding: 0;
-      margin-bottom: 10px; }
+      list-style: none;
+      margin-bottom: 10px;
+      padding: 0; }
     #home nav a {
       font-family: Raleway;
       color: #F6F6F6;
@@ -64,96 +64,81 @@
   #home .winner-part {
     display: flex;
     flex-direction: row;
+    align-items: end;
     justify-content: space-between;
-    margin-top: 8px;
-    align-items: end; }
+    margin-top: 8px; }
     #home .winner-part .social-icons {
       display: flex;
       flex-direction: column;
       margin-right: 10px; }
       #home .winner-part .social-icons img {
-        margin-bottom: 10px;
-        margin-top: 10px; }
+        margin: 10px 0; }
     #home .winner-part .logo-column {
-      margin-top: 48px;
       display: flex;
       flex-direction: column;
+      margin-top: 48px;
       align-items: center;
       margin-right: 85px; }
       #home .winner-part .logo-column h3 {
         font-family: Playfair Display SC;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 18px;
         color: #fff;
-        margin-top: 0;
-        margin-right: 3px; }
+        font-size: 18px;
+        font-weight: 900;
+        margin-right: 3px;
+        margin-top: 0; }
       #home .winner-part .logo-column .btn {
-        color: #d8d8d9;
-        border: 2px solid #d8d8d9;
-        box-sizing: border-box;
         font-family: Raleway;
-        font-weight: 600;
+        color: #d8d8d9;
         font-size: 16px;
-        background: none;
-        line-height: 19px;
-        width: 180px;
         display: flex;
         flex-direction: row;
         align-items: center;
+        background: none;
+        border: 2px solid #d8d8d9;
+        font-weight: 600;
         justify-content: center;
-        margin-top: 41px;
+        line-height: 19px;
         margin-right: 3px;
-        text-decoration: none; }
+        margin-top: 41px;
+        text-decoration: none;
+        width: 180px; }
         #home .winner-part .logo-column .btn .plus {
           font-size: 34px;
-          line-height: 40px;
           font-weight: 300;
+          line-height: 40px;
           margin-left: 12px; }
 
-body {
-  background-color: #1D1C21;
-  margin: 0;
-  padding: 0; }
-
-html {
-  scroll-behavior: smooth; }
-
-a {
-  text-decoration: none; }
-
 #artists {
-  width: 1134px;
   margin-left: auto;
   margin-right: auto;
-  height: 627px; }
+  height: 627px;
+  width: 1134px; }
   #artists h2 {
     font-family: Playfair Display SC;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 58px;
-    line-height: 65px;
     color: #89898B;
+    font-size: 58px;
+    font-weight: 900;
+    line-height: 65px;
     letter-spacing: 0.01em;
     margin-bottom: 28px; }
   #artists .artists-main {
     display: flex;
     justify-content: space-between; }
     #artists .artists-main .plus-btn {
-      color: #FF0e0e;
-      border: 1px solid #FF0e0e;
+      font-family: Raleway;
+      color: #FF0E0E;
+      font-size: 14px;
+      border: 1px solid #FF0E0E;
       background: none;
       width: 11.45px;
-      height: 11.45px;
-      font-size: 14px; }
+      height: 11.45px; }
     #artists .artists-main h3 {
       font-family: Playfair Display SC;
-      font-style: normal;
-      font-weight: 900;
+      color: #F6F6F6;
       font-size: 24px;
+      font-weight: 900;
       line-height: 32px;
       letter-spacing: 0.01em;
-      color: #F6F6F6;
       margin: 0; }
     #artists .artists-main .read {
       display: flex;
@@ -162,21 +147,26 @@ a {
       margin-bottom: 2px; }
       #artists .artists-main .read span {
         font-family: Raleway;
+        color: #F6F6F6;
         font-size: 15px;
         line-height: 18px;
-        letter-spacing: 0.01em;
-        color: #F6F6F6; }
+        letter-spacing: 0.01em; }
       #artists .artists-main .read a {
-        color: #FF0e0e;
-        border: 1px solid #FF0e0e;
+        font-family: Raleway;
+        color: #F6F6F6;
+        font-size: 11px;
+        border: 1px solid #F6F6F6;
         background: none;
         width: 11.45px;
         height: 11.45px;
-        font-size: 9px;
         padding: 0px;
         margin-left: 8px;
         margin-bottom: 2px;
-        text-align: center; }
+        text-align: center;
+        font-weight: 600; }
+      #artists .artists-main .read a:hover {
+        color: #FF0E0E;
+        border-color: #FF0E0E; }
       #artists .artists-main .read .read-btn {
         align-items: center;
         display: flex; }
@@ -210,36 +200,41 @@ a {
     #awards .award h3, #awards .award-middle h3 {
       font-family: Playfair Display SC;
       color: #1D1C21;
-      font-weight: 900;
       font-size: 24px;
+      font-weight: 900;
       line-height: 32px;
       letter-spacing: 0.01em;
       margin: 0; }
     #awards .award p, #awards .award-middle p {
       font-family: Raleway;
+      color: #1D1C21;
       font-size: 15px;
       line-height: 18px;
       letter-spacing: 0.01em;
-      color: #1D1C21;
       width: 80%;
       margin: 0; }
     #awards .award span, #awards .award-middle span {
       font-family: Raleway;
+      color: #1D1C21;
       font-size: 15px;
       line-height: 18px;
-      letter-spacing: 0.01em;
-      color: #FF0E0E; }
+      letter-spacing: 0.01em; }
     #awards .award a, #awards .award-middle a {
-      color: #FF0e0e;
-      border: 1px solid #FF0e0e;
+      font-family: Raleway;
+      color: #1D1C21;
+      font-size: 11px;
+      border: 1px solid #1D1C21;
       background: none;
       width: 11.45px;
       height: 11.45px;
-      font-size: 9px;
       padding: 0px;
       margin-left: 8px;
       margin-bottom: 4px;
-      text-align: center; }
+      text-align: center;
+      font-weight: 600; }
+    #awards .award a:hover, #awards .award-middle a:hover {
+      color: #FF0E0E;
+      border-color: #FF0E0E; }
   #awards .award-middle {
     margin-left: 118px; }
     #awards .award-middle p {
@@ -249,48 +244,53 @@ a {
     align-items: flex-end; }
 
 #featured {
-  width: 1134px;
   margin-left: auto;
   margin-right: auto;
+  width: 1134px;
   padding-bottom: 178px; }
   #featured img {
     cursor: pointer; }
   #featured h2 {
-    margin-top: 85px;
     font-family: Playfair Display SC;
-    font-weight: 900;
-    font-size: 57px;
-    line-height: 81px;
     color: #89898B;
+    font-size: 57px;
+    margin-top: 85px;
+    font-weight: 900;
+    line-height: 81px;
     letter-spacing: 0.01em;
     margin-bottom: 0px; }
   #featured h3 {
     font-family: Playfair Display SC;
-    font-weight: 900;
+    color: #F6F6F6;
     font-size: 24px;
+    font-weight: 900;
     line-height: 32px;
     letter-spacing: 0.01em;
-    color: #F6F6F6;
     margin-bottom: 0px; }
   #featured .read {
     display: flex; }
     #featured .read span {
       font-family: Raleway;
+      color: #F6F6F6;
       font-size: 15px;
       line-height: 18px;
-      letter-spacing: 0.01em;
-      color: #F6F6F6; }
+      letter-spacing: 0.01em; }
     #featured .read a {
-      color: #FF0e0e;
-      border: 1px solid #FF0e0e;
+      font-family: Raleway;
+      color: #F6F6F6;
+      font-size: 11px;
+      border: 1px solid #F6F6F6;
       background: none;
       width: 11.45px;
       height: 11.45px;
-      font-size: 9px;
+      font-weight: 600;
       padding: 0px;
       margin-left: 8px;
       margin-bottom: 4px;
       text-align: center; }
+    #featured .read a:hover {
+      color: #FF0E0E;
+      border-color: #FF0E0E; }
   #featured .featured-main {
     display: flex; }
   #featured .feature-header {
@@ -306,6 +306,17 @@ a {
       margin-top: 48px; }
   #featured .left-col {
     margin-top: 22px; }
+
+body {
+  background-color: #1D1C21;
+  margin: 0;
+  padding: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none; }
 
 #about-us {
   background-color: lightgray;
@@ -597,7 +608,7 @@ a {
     position: relative; }
   #about-us img {
     left: 43%; } }
-@media only screen and (max-width: 1439px) and (min-width: 1024px) {
+@media only screen and (max-width: 1430px) and (min-width: 1024px) {
   #home {
     background-size: cover;
     height: 664px; }

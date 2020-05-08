@@ -12,3 +12,9 @@
     display: flex;
     flex-direction: column;
 }
+
+@mixin font($size, $family, $color){
+    font-family: $family;
+    color: $color;
+    font-size: $size;
+} 

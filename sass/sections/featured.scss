@@ -1,0 +1,82 @@
+@import "../helpers/mixins";
+@import "../helpers/variables";
+
+#featured{
+    @include margin-auto;
+    width: 1134px;
+    padding-bottom: 178px;
+
+    img{
+        cursor: pointer;
+    }
+
+    h2{
+        @include font(57px, Playfair Display SC, $font-gray);
+        margin-top: 85px;
+        font-weight: 900;
+        line-height: 81px;
+        letter-spacing: 0.01em;
+        margin-bottom: 0px;
+    }
+
+    h3{
+        @include font(24px, Playfair Display SC, $border-color);
+        font-weight: 900;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+        margin-bottom: 0px;
+    }
+
+    .read{
+        display: flex;
+
+        span {
+            @include font(15px, Raleway, $border-color);
+            line-height: 18px;
+            letter-spacing: 0.01em;
+        }
+
+        a{  @include font(11px, Raleway, $border-color);
+            border: 1px solid $border-color;
+            background: none;
+            width: 11.45px;
+            height: 11.45px;
+            font-weight: 600;
+            padding: 0px;
+            margin-left: 8px;
+            margin-bottom: 4px;
+            text-align: center;
+        }
+
+        a:hover{
+            color: $red-color;
+            border-color: $red-color;
+        }
+    }
+
+    .featured-main{
+        display: flex;
+    }
+
+    .feature-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: -4px;
+    }
+
+    .col-img{
+        margin-right: 26px;
+    }
+    
+    .right-col{
+        margin-right: 30px;
+        div{
+            margin-top: 48px;
+        }
+    }
+
+    .left-col{
+        margin-top: 22px;
+    }
+}

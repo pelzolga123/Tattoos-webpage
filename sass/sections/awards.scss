@@ -1,0 +1,95 @@
+@import "../helpers/mixins";
+@import "../helpers/variables";
+
+#awards{  
+    height: 408px;
+    background-color: rgba(211, 211, 211, 1);
+
+    .inner-awards{
+        height: 408px;
+        background: url('../images/awards/background_img.svg') no-repeat;
+    }
+
+    .layer{
+        @include flex-row;
+        height: 408px;
+        margin-left: 145px;
+        margin-right: 51px;    
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .award, .award-middle{
+        display: flex;
+        margin-top: 2px;
+
+        img{
+            margin-right: 15px; 
+            margin-bottom: 25px;
+        }
+
+        .img-right{
+            margin-bottom: 18px;
+        }
+
+        .award-text{
+            margin-top: 14px;
+
+            div{
+                margin-top: 7px;
+            }
+        }   
+
+        h3{
+            @include font(24px, Playfair Display SC, $background-main);
+            font-weight: 900;
+            line-height: 32px;
+            letter-spacing: 0.01em;
+            margin: 0;
+        }
+
+        p{
+            @include font(15px, Raleway, $background-main);
+            line-height: 18px;
+            letter-spacing: 0.01em;
+            width: 80%;
+            margin: 0;
+        }
+
+        span{
+            @include font(15px, Raleway, $background-main);
+            line-height: 18px;
+            letter-spacing: 0.01em;
+        }
+        a{
+            @include font(11px, Raleway, $background-main);
+            border: 1px solid $background-main;
+            background: none;
+            width: 11.45px;
+            height: 11.45px;
+            padding: 0px;
+            margin-left: 8px;
+            margin-bottom: 4px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        a:hover{
+            color: $red-color;
+            border-color: $red-color;
+        }
+    }
+
+    .award-middle{
+        margin-left: 118px;
+
+        p{
+            width: 65%;
+        }
+    }
+
+    .learn{
+        display: flex;
+        align-items: flex-end;
+    }
+}
