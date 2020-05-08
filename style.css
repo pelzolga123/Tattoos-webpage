@@ -22,13 +22,13 @@
     cursor: pointer; }
 
 #home {
-  background: url("./images/home_background.svg") no-repeat;
+  background: url("../images/home_background.svg") no-repeat;
   background-size: contain;
   display: flex;
   height: 712px; }
   #home .mask {
     display: flex;
-    background: url("./images/test.svg") no-repeat;
+    background: url("../images/test.svg") no-repeat;
     background-size: contain;
     width: 906px; }
   #home .mask-color {
@@ -174,7 +174,7 @@
   background-color: lightgray; }
   #awards .inner-awards {
     height: 408px;
-    background: url("./images/awards/background_img.svg") no-repeat; }
+    background: url("../images/awards/background_img.svg") no-repeat; }
   #awards .layer {
     display: flex;
     flex-direction: row;
@@ -340,7 +340,7 @@
       padding: 18px 0; }
   #about-us .about-main {
     height: 430px;
-    background: url("./images/about_us/background_img.svg") no-repeat;
+    background: url("../images/about_us/background_img.svg") no-repeat;
     display: flex; }
   #about-us .container {
     margin-left: auto;
@@ -458,7 +458,7 @@
         color: #f6f6f6;
         font-size: 15px;
         cursor: pointer;
-        background: url('./images/upload.svg') no-repeat;
+        background: url(../images/upload.svg) no-repeat;
         background-position: 136px;
         padding: 33px 43px 33px 33px;
         letter-spacing: 0.01em; }
@@ -812,7 +812,7 @@ a {
     #about-us .about {
       margin-left: auto;
       margin-right: auto;
-      width: 50%; }
+      width: 70%; }
     #about-us h2 {
       font-size: 24px; }
     #about-us p {
@@ -843,10 +843,19 @@ a {
       width: 100%;
       margin-top: 0; }
     #featured .col-img {
-      margin: 10px 0px 10px 0; }
+      margin: 10px 0 10px 0; }
 
   #contact {
     width: 90%; }
+    #contact .upload {
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: space-between;
+      width: 80%; }
+      #contact .upload label {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        font-size: 11px !important; }
     #contact img {
       display: none; }
     #contact form {
@@ -915,7 +924,7 @@ a {
       margin-left: auto;
       margin-right: auto;
       flex-wrap: wrap;
-      width: 50%;
+      width: 80%;
       padding: 15px 0;
       height: 100%; }
     #awards .award,
