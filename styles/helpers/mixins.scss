@@ -1,0 +1,31 @@
+@mixin margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin font($size, $family, $color) {
+  font-family: $family;
+  color: $color;
+  font-size: $size;
+}
+
+@mixin plus-btn($color) {
+  border: 1px solid $color;
+  background: none;
+  width: 11.45px;
+  height: 11.45px;
+  padding: 0;
+  margin-left: 8px;
+  text-align: center;
+  font-weight: 600;
+}
