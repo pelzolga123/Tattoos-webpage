@@ -1,7 +1,7 @@
 @import "../helpers/mixins";
 @import "../helpers/variables";
 
-#home {
+.home-section {
   background: url('../images/home_background.svg') no-repeat;
   background-size: contain;
   display: flex;

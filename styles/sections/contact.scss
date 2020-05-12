@@ -1,7 +1,7 @@
 @import "../helpers/mixins";
 @import "../helpers/variables";
 
-#contact {
+.contact-section {
   @include margin-auto;
 
   width: 1134px;

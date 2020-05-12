@@ -26,7 +26,7 @@ a {
 }
 
 @media only screen and (min-width: 1441px) {
-  #home {
+  .home-section {
     background-size: cover;
     height: 664px;
 
@@ -35,7 +35,7 @@ a {
     }
   }
 
-  #awards {
+  .awards-section {
     .inner-awards {
       background-size: cover;
     }
@@ -57,7 +57,7 @@ a {
     }
   }
 
-  #about-us {
+  .about-us-section {
     .about-main {
       background-size: cover;
     }
@@ -73,7 +73,7 @@ a {
 }
 
 @media only screen and (max-width: 1430px) and (min-width: 1024px) {
-  #home {
+  .home-section {
     background-size: cover;
     height: 664px;
 
@@ -90,7 +90,7 @@ a {
     }
   }
 
-  #artists {
+  .artists-section {
     width: 90%;
 
     img {
@@ -102,7 +102,7 @@ a {
     }
   }
 
-  #awards {
+  .awards-section {
     .inner-awards {
       background-size: cover;
     }
@@ -128,7 +128,7 @@ a {
     }
   }
 
-  #featured {
+  .featured-section {
     width: 90%;
 
     img {
@@ -136,7 +136,7 @@ a {
     }
   }
 
-  #about-us {
+  .about-us-section {
     img {
       left: 43%;
       width: 500px;
@@ -156,7 +156,7 @@ a {
     }
   }
 
-  #instagram {
+  .instagram-section {
     .collection {
       @include flex-col;
 
@@ -177,11 +177,11 @@ a {
     }
   }
 
-  #contact {
+  .contact-section {
     width: 90%;
   }
 
-  footer {
+  .footer {
     width: 90% !important;
 
     .footer-bottom {
@@ -191,7 +191,7 @@ a {
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
-  #home {
+  .home-section {
     background-size: cover;
     height: 664px;
 
@@ -216,7 +216,7 @@ a {
     }
   }
 
-  #artists {
+  .artists-section {
     width: 90%;
 
     img {
@@ -234,7 +234,7 @@ a {
     }
   }
 
-  #contact {
+  .contact-section {
     width: 80%;
 
     .map-section {
@@ -261,7 +261,7 @@ a {
     }
   }
 
-  #about-us {
+  .about-us-section {
     img {
       display: none;
     }
@@ -280,7 +280,7 @@ a {
     }
   }
 
-  #awards {
+  .awards-section {
     .inner-awards {
       background-size: cover;
     }
@@ -320,7 +320,7 @@ a {
     }
   }
 
-  #featured {
+  .featured-section {
     width: 90%;
 
     .featured-main {
@@ -334,7 +334,7 @@ a {
     }
   }
 
-  #instagram {
+  .instagram-section {
     h2 {
       font-size: 36px;
     }
@@ -359,7 +359,7 @@ a {
     }
   }
 
-  footer {
+  .footer {
     width: 95% !important;
 
     ul {
@@ -374,14 +374,14 @@ a {
 
 @media only screen and (max-width: 767px) {
   .mask .mask-color,
-  #home,
+  .home-section,
   .home-content {
     background: none;
     width: 100% !important;
     margin-top: 0 !important;
   }
 
-  footer {
+  .footer {
     width: 90% !important;
 
     ul {
@@ -395,7 +395,7 @@ a {
     }
   }
 
-  #about-us {
+  .about-us-section {
     width: 100%;
     height: 100%;
 
@@ -418,7 +418,7 @@ a {
     }
   }
 
-  #featured {
+  .featured-section {
     width: 85%;
 
     h2 {
@@ -457,7 +457,7 @@ a {
     }
   }
 
-  #contact {
+  .contact-section {
     width: 90%;
 
     .upload {
@@ -490,7 +490,7 @@ a {
     }
   }
 
-  #instagram {
+  .instagram-section {
     h2 {
       font-size: 24px;
     }
@@ -515,7 +515,7 @@ a {
     }
   }
 
-  #home {
+  .home-section {
     height: 900px;
 
     .logo-column {
@@ -557,7 +557,7 @@ a {
     }
   }
 
-  #artists {
+  .artists-section {
     width: 90%;
     height: 100%;
     margin-bottom: 20px;
@@ -574,7 +574,7 @@ a {
     }
   }
 
-  #awards {
+  .awards-section {
     height: 100%;
 
     .inner-awards {
