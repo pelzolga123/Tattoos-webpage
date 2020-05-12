@@ -16,76 +16,72 @@
   display: flex;
   justify-content: center;
   align-items: center; }
-  #lightbox.active .close-btn {
-    position: absolute;
-    border: none;
-    cursor: pointer; }
 
-#home {
+.home-section {
   background: url("./images/home_background.svg") no-repeat;
   background-size: contain;
   display: flex;
   height: 712px; }
-  #home .mask {
+  .home-section .mask {
     display: flex;
     background: url("./images/test.svg") no-repeat;
     background-size: contain;
     width: 906px; }
-  #home .mask-color {
+  .home-section .mask-color {
     background-color: rgba(29, 28, 33, 0.7);
     display: flex;
     height: 670px;
     position: absolute;
     width: 100%; }
-  #home .home-content {
+  .home-section .home-content {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     width: 1156px; }
-  #home nav {
+  .home-section nav {
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid #f6f6f6;
     width: 1134px; }
-    #home nav ul {
+    .home-section nav ul {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       list-style: none;
       margin-bottom: 10px;
       padding: 0; }
-    #home nav a {
+    .home-section nav a {
       font-family: Raleway;
       color: #f6f6f6;
       font-size: 15px; }
-    #home nav a:hover {
+    .home-section nav a:hover {
       color: #ff0e0e; }
-  #home .winner-part {
+  .home-section .winner-part {
     display: flex;
     flex-direction: row;
     align-items: end;
     justify-content: space-between;
     margin-top: 8px; }
-    #home .winner-part .social-icons {
+    .home-section .winner-part .social-icons {
       display: flex;
       flex-direction: column;
       margin-right: 10px; }
-      #home .winner-part .social-icons img {
+      .home-section .winner-part .social-icons img {
         margin: 10px 0; }
-    #home .winner-part .logo-column {
+    .home-section .winner-part .logo-column {
       display: flex;
       flex-direction: column;
       margin-top: 48px;
       align-items: center;
       margin-right: 85px; }
-      #home .winner-part .logo-column h3 {
+      .home-section .winner-part .logo-column h3 {
         font-family: Playfair Display SC;
         color: #fff;
         font-size: 18px;
         font-weight: 900;
         margin-right: 3px;
         margin-top: 0; }
-      #home .winner-part .logo-column .btn {
+      .home-section .winner-part .logo-column .btn {
         font-family: Raleway;
         color: #d8d8d9;
         font-size: 16px;
@@ -100,18 +96,18 @@
         margin-right: 3px;
         margin-top: 41px;
         width: 180px; }
-        #home .winner-part .logo-column .btn .plus {
+        .home-section .winner-part .logo-column .btn .plus {
           font-size: 34px;
           font-weight: 300;
           line-height: 40px;
           margin-left: 12px; }
 
-#artists {
+.artists-section {
   margin-left: auto;
   margin-right: auto;
   height: 627px;
   width: 1134px; }
-  #artists h2 {
+  .artists-section h2 {
     font-family: Playfair Display SC;
     color: #89898b;
     font-size: 58px;
@@ -119,10 +115,10 @@
     line-height: 65px;
     letter-spacing: 0.01em;
     margin-bottom: 28px; }
-  #artists .artists-main {
+  .artists-section .artists-main {
     display: flex;
     justify-content: space-between; }
-    #artists .artists-main .plus-btn {
+    .artists-section .artists-main .plus-btn {
       font-family: Raleway;
       color: #ff0e0e;
       font-size: 14px;
@@ -130,7 +126,7 @@
       background: none;
       width: 11.45px;
       height: 11.45px; }
-    #artists .artists-main h3 {
+    .artists-section .artists-main h3 {
       font-family: Playfair Display SC;
       color: #f6f6f6;
       font-size: 24px;
@@ -138,18 +134,18 @@
       line-height: 32px;
       letter-spacing: 0.01em;
       margin: 0; }
-    #artists .artists-main .read {
+    .artists-section .artists-main .read {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
       margin-bottom: 2px; }
-      #artists .artists-main .read span {
+      .artists-section .artists-main .read span {
         font-family: Raleway;
         color: #f6f6f6;
         font-size: 15px;
         line-height: 18px;
         letter-spacing: 0.01em; }
-      #artists .artists-main .read a {
+      .artists-section .artists-main .read a {
         font-family: Raleway;
         color: #f6f6f6;
         font-size: 11px;
@@ -162,20 +158,20 @@
         text-align: center;
         font-weight: 600;
         margin-bottom: 2px; }
-      #artists .artists-main .read a:hover {
+      .artists-section .artists-main .read a:hover {
         color: #ff0e0e;
         border-color: #ff0e0e; }
-      #artists .artists-main .read .read-btn {
+      .artists-section .artists-main .read .read-btn {
         align-items: center;
         display: flex; }
 
-#awards {
+.awards-section {
   height: 408px;
   background-color: lightgray; }
-  #awards .inner-awards {
+  .awards-section .inner-awards {
     height: 408px;
     background: url("./images/awards/background_img.svg") no-repeat; }
-  #awards .layer {
+  .awards-section .layer {
     display: flex;
     flex-direction: row;
     height: 408px;
@@ -183,25 +179,25 @@
     margin-right: 51px;
     justify-content: space-between;
     align-items: center; }
-  #awards .award,
-  #awards .award-middle {
+  .awards-section .award,
+  .awards-section .award-middle {
     display: flex;
     margin-top: 2px; }
-    #awards .award img,
-    #awards .award-middle img {
+    .awards-section .award img,
+    .awards-section .award-middle img {
       margin-right: 15px;
       margin-bottom: 25px; }
-    #awards .award .img-right,
-    #awards .award-middle .img-right {
+    .awards-section .award .img-right,
+    .awards-section .award-middle .img-right {
       margin-bottom: 18px; }
-    #awards .award .award-text,
-    #awards .award-middle .award-text {
+    .awards-section .award .award-text,
+    .awards-section .award-middle .award-text {
       margin-top: 14px; }
-      #awards .award .award-text div,
-      #awards .award-middle .award-text div {
+      .awards-section .award .award-text div,
+      .awards-section .award-middle .award-text div {
         margin-top: 7px; }
-    #awards .award h3,
-    #awards .award-middle h3 {
+    .awards-section .award h3,
+    .awards-section .award-middle h3 {
       font-family: Playfair Display SC;
       color: #1d1c21;
       font-size: 24px;
@@ -209,8 +205,8 @@
       line-height: 32px;
       letter-spacing: 0.01em;
       margin: 0; }
-    #awards .award p,
-    #awards .award-middle p {
+    .awards-section .award p,
+    .awards-section .award-middle p {
       font-family: Raleway;
       color: #1d1c21;
       font-size: 15px;
@@ -218,15 +214,15 @@
       letter-spacing: 0.01em;
       width: 80%;
       margin: 0; }
-    #awards .award span,
-    #awards .award-middle span {
+    .awards-section .award span,
+    .awards-section .award-middle span {
       font-family: Raleway;
       color: #1d1c21;
       font-size: 15px;
       line-height: 18px;
       letter-spacing: 0.01em; }
-    #awards .award a,
-    #awards .award-middle a {
+    .awards-section .award a,
+    .awards-section .award-middle a {
       font-family: Raleway;
       color: #1d1c21;
       font-size: 11px;
@@ -239,26 +235,26 @@
       text-align: center;
       font-weight: 600;
       margin-bottom: 4px; }
-    #awards .award a:hover,
-    #awards .award-middle a:hover {
+    .awards-section .award a:hover,
+    .awards-section .award-middle a:hover {
       color: #ff0e0e;
       border-color: #ff0e0e; }
-  #awards .award-middle {
+  .awards-section .award-middle {
     margin-left: 118px; }
-    #awards .award-middle p {
+    .awards-section .award-middle p {
       width: 65%; }
-  #awards .learn {
+  .awards-section .learn {
     display: flex;
     align-items: flex-end; }
 
-#featured {
+.featured-section {
   margin-left: auto;
   margin-right: auto;
   width: 1134px;
   padding-bottom: 178px; }
-  #featured img {
+  .featured-section img {
     cursor: pointer; }
-  #featured h2 {
+  .featured-section h2 {
     font-family: Playfair Display SC;
     color: #89898b;
     font-size: 57px;
@@ -267,7 +263,7 @@
     line-height: 81px;
     letter-spacing: 0.01em;
     margin-bottom: 0; }
-  #featured h3 {
+  .featured-section h3 {
     font-family: Playfair Display SC;
     color: #f6f6f6;
     font-size: 24px;
@@ -275,15 +271,15 @@
     line-height: 32px;
     letter-spacing: 0.01em;
     margin-bottom: 0; }
-  #featured .read {
+  .featured-section .read {
     display: flex; }
-    #featured .read span {
+    .featured-section .read span {
       font-family: Raleway;
       color: #f6f6f6;
       font-size: 15px;
       line-height: 18px;
       letter-spacing: 0.01em; }
-    #featured .read a {
+    .featured-section .read a {
       font-family: Raleway;
       color: #f6f6f6;
       font-size: 11px;
@@ -296,72 +292,72 @@
       text-align: center;
       font-weight: 600;
       margin-bottom: 4px; }
-    #featured .read a:hover {
+    .featured-section .read a:hover {
       color: #ff0e0e;
       border-color: #ff0e0e; }
-  #featured .featured-main {
+  .featured-section .featured-main {
     display: flex; }
-  #featured .feature-header {
+  .featured-section .feature-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: -4px; }
-  #featured .col-img {
+  .featured-section .col-img {
     margin-right: 26px; }
-  #featured .right-col {
+  .featured-section .right-col {
     margin-right: 30px; }
-    #featured .right-col div {
+    .featured-section .right-col div {
       margin-top: 48px; }
-  #featured .left-col {
+  .featured-section .left-col {
     margin-top: 22px; }
 
-#about-us {
+.about-us-section {
   background-color: lightgray;
   height: 430px; }
-  #about-us h2 {
+  .about-us-section h2 {
     font-family: Playfair Display SC;
     color: #89898b;
     font-size: 55px;
     font-weight: 900;
     letter-spacing: 0.05em;
     margin: 0; }
-  #about-us p {
+  .about-us-section p {
     font-family: Raleway;
     color: #1d1c21;
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 0.01em;
     margin: 0; }
-  #about-us .paragraphs {
+  .about-us-section .paragraphs {
     display: flex;
     flex-direction: column;
     margin-top: 3px; }
-    #about-us .paragraphs .paragraph-1 {
+    .about-us-section .paragraphs .paragraph-1 {
       padding: 18px 0; }
-  #about-us .about-main {
+  .about-us-section .about-main {
     height: 430px;
     background: url("./images/about_us/background_img.svg") no-repeat;
     display: flex; }
-  #about-us .container {
+  .about-us-section .container {
     margin-left: auto;
     margin-right: auto;
     display: flex;
     width: 1134px; }
-  #about-us .about {
+  .about-us-section .about {
     display: flex;
     flex-direction: column;
     width: 455px;
     justify-content: center; }
-  #about-us img {
+  .about-us-section img {
     position: absolute;
     align-self: center;
     left: 632px; }
 
-#instagram .collection {
+.instagram-section .collection {
   margin-left: auto;
   margin-right: auto;
   width: 1134px; }
-#instagram h2 {
+.instagram-section h2 {
   font-family: Playfair Display SC;
   color: #89898b;
   font-size: 56px;
@@ -371,33 +367,33 @@
   margin-top: 84px;
   margin-bottom: 22px;
   letter-spacing: 0.02em; }
-#instagram .small-col {
+.instagram-section .small-col {
   display: flex;
   flex-wrap: wrap; }
-  #instagram .small-col img {
+  .instagram-section .small-col img {
     margin-left: 11px;
     margin-bottom: 10px; }
-#instagram .second-row .small-col img {
+.instagram-section .second-row .small-col img {
   margin-right: 11px;
   margin-left: 0; }
-#instagram .second-row .big-col img {
+.instagram-section .second-row .big-col img {
   margin-left: 0; }
-#instagram .first-row,
-#instagram .second-row {
+.instagram-section .first-row,
+.instagram-section .second-row {
   display: flex; }
-#instagram .show-btn {
+.instagram-section .show-btn {
   margin-left: auto;
   margin-right: auto;
   width: 101px;
   margin-top: 20px;
   display: flex; }
-  #instagram .show-btn span {
+  .instagram-section .show-btn span {
     font-family: Raleway;
     color: #f6f6f6;
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 0.01em; }
-  #instagram .show-btn a {
+  .instagram-section .show-btn a {
     font-family: Raleway;
     color: #f6f6f6;
     font-size: 11px;
@@ -410,17 +406,17 @@
     text-align: center;
     font-weight: 600;
     margin-bottom: 2px; }
-  #instagram .show-btn a:hover {
+  .instagram-section .show-btn a:hover {
     color: #ff0e0e;
     border-color: #ff0e0e; }
 
-#contact {
+.contact-section {
   margin-left: auto;
   margin-right: auto;
   width: 1134px;
   margin-bottom: 80px;
   margin-top: 81px; }
-  #contact h3 {
+  .contact-section h3 {
     font-family: Playfair Display SC;
     color: #f6f6f6;
     font-size: 24px;
@@ -429,23 +425,23 @@
     text-align: center;
     letter-spacing: 0.01em;
     margin-bottom: 19px; }
-  #contact label {
+  .contact-section label {
     font-family: Raleway;
     color: #f6f6f6;
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 0.01em; }
-  #contact form {
+  .contact-section form {
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 80px;
     width: 540px; }
-    #contact form .upload {
+    .contact-section form .upload {
       display: flex;
       justify-content: center; }
-      #contact form .upload .upload-btn {
+      .contact-section form .upload .upload-btn {
         overflow: hidden;
         white-space: nowrap;
         position: absolute;
@@ -453,20 +449,20 @@
         clip: rect(0, 0, 0, 0);
         height: 1px;
         width: 1px; }
-      #contact form .upload label {
+      .contact-section form .upload label {
         font-family: Raleway;
         color: #f6f6f6;
         font-size: 15px;
         cursor: pointer;
-        background: url('./images/upload.svg') no-repeat;
+        background: url("./images/upload.svg") no-repeat;
         background-position: 136px;
         padding: 33px 43px 33px 33px;
         letter-spacing: 0.01em; }
-      #contact form .upload .upload-btn + label {
+      .contact-section form .upload .upload-btn + label {
         display: inline-block; }
-    #contact form input,
-    #contact form select,
-    #contact form textarea {
+    .contact-section form input,
+    .contact-section form select,
+    .contact-section form textarea {
       font-family: Raleway;
       color: #36353d;
       font-size: 15px;
@@ -478,16 +474,16 @@
       padding: 6px 0 9px 17px;
       line-height: 18px;
       letter-spacing: 0.01em; }
-    #contact form textarea {
+    .contact-section form textarea {
       padding: 5px 0 48px 26px; }
-    #contact form select {
+    .contact-section form select {
       padding: 6px 0 9px 22px; }
-    #contact form option {
+    .contact-section form option {
       background-color: #1d1c21;
       border-bottom: 1px solid #36353d; }
-    #contact form .select-label {
+    .contact-section form .select-label {
       margin-top: 27px; }
-    #contact form button {
+    .contact-section form button {
       font-family: Raleway;
       color: #d8d8d9;
       font-size: 16px;
@@ -502,32 +498,32 @@
       justify-content: center;
       margin-top: 8px;
       align-self: center; }
-      #contact form button .plus {
+      .contact-section form button .plus {
         font-size: 34px;
         line-height: 40px;
         font-weight: 300;
         margin-left: 12px; }
-  #contact .map-section {
+  .contact-section .map-section {
     display: flex;
     justify-content: space-between;
     height: 317px;
     background-color: #c4c4c4;
     margin-top: 80px; }
-    #contact .map-section .social-icons {
+    .contact-section .map-section .social-icons {
       width: 22%;
       display: flex;
       justify-content: space-between;
       margin-top: 15px; }
-      #contact .map-section .social-icons img {
+      .contact-section .map-section .social-icons img {
         width: 20px; }
-    #contact .map-section .map-info {
+    .contact-section .map-section .map-info {
       margin-left: auto;
       margin-right: auto;
       width: 26%;
       margin-top: 20px; }
-      #contact .map-section .map-info div {
+      .contact-section .map-section .map-info div {
         margin-top: 12px; }
-    #contact .map-section h4 {
+    .contact-section .map-section h4 {
       font-family: Playfair Display SC;
       color: #1d1c21;
       font-size: 14px;
@@ -535,7 +531,7 @@
       line-height: 19px;
       letter-spacing: 0.01em;
       margin: 0; }
-    #contact .map-section p {
+    .contact-section .map-section p {
       font-family: Raleway;
       color: #1d1c21;
       font-size: 15px;
@@ -591,250 +587,250 @@ a {
   text-decoration: none; }
 
 @media only screen and (min-width: 1441px) {
-  #home {
+  .home-section {
     background-size: cover;
     height: 664px; }
-    #home .mask-color {
+    .home-section .mask-color {
       height: 664px; }
 
-  #awards .inner-awards {
+  .awards-section .inner-awards {
     background-size: cover; }
-  #awards .layer {
+  .awards-section .layer {
     margin-left: auto;
     margin-right: auto;
     width: 60%; }
-  #awards .award,
-  #awards .award-middle {
+  .awards-section .award,
+  .awards-section .award-middle {
     width: 33%;
     justify-content: center; }
-  #awards .award-middle {
+  .awards-section .award-middle {
     margin: 0; }
 
-  #about-us .about-main {
+  .about-us-section .about-main {
     background-size: cover; }
-  #about-us .container {
+  .about-us-section .container {
     position: relative; }
-  #about-us img {
+  .about-us-section img {
     left: 43%; } }
 @media only screen and (max-width: 1430px) and (min-width: 1024px) {
-  #home {
+  .home-section {
     background-size: cover;
     height: 664px; }
-    #home .mask-color {
+    .home-section .mask-color {
       height: 664px; }
-    #home .home-content {
+    .home-section .home-content {
       width: 90%; }
-    #home nav {
+    .home-section nav {
       width: 100%; }
 
-  #artists {
+  .artists-section {
     width: 90%; }
-    #artists img {
+    .artists-section img {
       width: 200px; }
-    #artists h3 {
+    .artists-section h3 {
       font-size: 20px !important; }
 
-  #awards .inner-awards {
+  .awards-section .inner-awards {
     background-size: cover; }
-  #awards .layer {
+  .awards-section .layer {
     margin-left: auto;
     margin-right: auto;
     width: 96%; }
-  #awards .award,
-  #awards .award-middle {
+  .awards-section .award,
+  .awards-section .award-middle {
     width: 32%;
     justify-content: center; }
-  #awards .award-middle {
+  .awards-section .award-middle {
     margin: 0; }
-    #awards .award-middle p {
+    .awards-section .award-middle p {
       width: 100%; }
 
-  #featured {
+  .featured-section {
     width: 90%; }
-    #featured img {
+    .featured-section img {
       width: 200px; }
 
-  #about-us img {
+  .about-us-section img {
     left: 43%;
     width: 500px; }
-  #about-us .container {
+  .about-us-section .container {
     width: 90%;
     position: relative; }
-  #about-us .about {
+  .about-us-section .about {
     width: 385px; }
-    #about-us .about p {
+    .about-us-section .about p {
       font-size: 13px; }
 
-  #instagram .collection {
+  .instagram-section .collection {
     display: flex;
     flex-direction: column;
     width: 866px; }
-  #instagram .big-col {
+  .instagram-section .big-col {
     display: none; }
-  #instagram .small-col {
+  .instagram-section .small-col {
     justify-content: center; }
-    #instagram .small-col img {
+    .instagram-section .small-col img {
       margin-left: 15px;
       margin-right: 0; }
 
-  #contact {
+  .contact-section {
     width: 90%; }
 
-  footer {
+  .footer {
     width: 90% !important; }
-    footer .footer-bottom {
+    .footer .footer-bottom {
       font-size: 11px !important; } }
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
-  #home {
+  .home-section {
     background-size: cover;
     height: 664px; }
-    #home .mask-color {
+    .home-section .mask-color {
       height: 664px; }
-    #home .home-content {
+    .home-section .home-content {
       width: 95%; }
-    #home nav {
+    .home-section nav {
       width: 100%; }
-      #home nav li {
+      .home-section nav li {
         font-size: 12px; }
-    #home .logo-column {
+    .home-section .logo-column {
       margin-right: 25px !important; }
 
-  #artists {
+  .artists-section {
     width: 90%; }
-    #artists img {
+    .artists-section img {
       width: 150px; }
-    #artists .read {
+    .artists-section .read {
       flex-direction: column; }
-    #artists .artists-main div {
+    .artists-section .artists-main div {
       width: 90%; }
 
-  #contact {
+  .contact-section {
     width: 80%; }
-    #contact .map-section {
+    .contact-section .map-section {
       margin-left: auto;
       margin-right: auto;
       width: 70%;
       flex-direction: column;
       height: 568px; }
-    #contact .map-info {
+    .contact-section .map-info {
       margin-left: auto;
       margin-right: auto;
       width: 70% !important;
       margin-bottom: 20px !important; }
-    #contact h4 {
+    .contact-section h4 {
       font-size: 12px !important; }
-    #contact p {
+    .contact-section p {
       font-size: 13px !important; }
 
-  #about-us img {
+  .about-us-section img {
     display: none; }
-  #about-us .container {
+  .about-us-section .container {
     width: 80%;
     position: relative; }
-  #about-us .about {
+  .about-us-section .about {
     width: 385px; }
-    #about-us .about p {
+    .about-us-section .about p {
       font-size: 13px; }
 
-  #awards .inner-awards {
+  .awards-section .inner-awards {
     background-size: cover; }
-  #awards .layer {
+  .awards-section .layer {
     margin-left: auto;
     margin-right: auto;
     width: 96%; }
-  #awards .award,
-  #awards .award-middle {
+  .awards-section .award,
+  .awards-section .award-middle {
     width: 32%;
     justify-content: center; }
-    #awards .award img,
-    #awards .award-middle img {
+    .awards-section .award img,
+    .awards-section .award-middle img {
       width: 25%; }
-  #awards .award-text h3 {
+  .awards-section .award-text h3 {
     font-size: 14px; }
-  #awards .award-text p {
+  .awards-section .award-text p {
     font-size: 12px; }
-  #awards .award-middle {
+  .awards-section .award-middle {
     margin: 0; }
-    #awards .award-middle p {
+    .awards-section .award-middle p {
       width: 100%; }
 
-  #featured {
+  .featured-section {
     width: 90%; }
-    #featured .featured-main {
+    .featured-section .featured-main {
       display: flex;
       flex-direction: column;
       align-items: center; }
-    #featured .right-col {
+    .featured-section .right-col {
       margin-right: 0; }
 
-  #instagram h2 {
+  .instagram-section h2 {
     font-size: 36px; }
-  #instagram .collection {
+  .instagram-section .collection {
     display: flex;
     flex-direction: column;
     width: 760px; }
-  #instagram .big-col {
+  .instagram-section .big-col {
     display: none; }
-  #instagram .small-col {
+  .instagram-section .small-col {
     justify-content: center; }
-    #instagram .small-col img {
+    .instagram-section .small-col img {
       margin-left: 15px !important;
       margin-right: 0 !important; }
 
-  footer {
+  .footer {
     width: 95% !important; }
-    footer ul {
+    .footer ul {
       font-size: 13px !important; }
-    footer .footer-bottom {
+    .footer .footer-bottom {
       font-size: 11px !important; } }
 @media only screen and (max-width: 767px) {
   .mask .mask-color,
-  #home,
+  .home-section,
   .home-content {
     background: none;
     width: 100% !important;
     margin-top: 0 !important; }
 
-  footer {
+  .footer {
     width: 90% !important; }
-    footer ul {
+    .footer ul {
       display: none !important; }
-    footer .footer-bottom {
+    .footer .footer-bottom {
       display: flex;
       flex-direction: column;
       padding: 10px 0; }
 
-  #about-us {
+  .about-us-section {
     width: 100%;
     height: 100%; }
-    #about-us img {
+    .about-us-section img {
       display: none; }
-    #about-us .about {
+    .about-us-section .about {
       margin-left: auto;
       margin-right: auto;
       width: 70%; }
-    #about-us h2 {
+    .about-us-section h2 {
       font-size: 24px; }
-    #about-us p {
+    .about-us-section p {
       font-size: 14px; }
 
-  #featured {
+  .featured-section {
     width: 85%; }
-    #featured h2 {
+    .featured-section h2 {
       font-size: 36px; }
-    #featured .feature-header {
+    .featured-section .feature-header {
       margin-left: auto;
       margin-right: auto;
       width: 100%;
       flex-direction: column; }
-    #featured .featured-main {
+    .featured-section .featured-main {
       display: flex;
       flex-direction: column;
       align-items: center; }
-    #featured .right-col {
+    .featured-section .right-col {
       margin-right: 0; }
-    #featured .works-img,
-    #featured .left-col {
+    .featured-section .works-img,
+    .featured-section .left-col {
       margin-left: auto;
       margin-right: auto;
       display: flex;
@@ -842,95 +838,95 @@ a {
       align-items: center;
       width: 100%;
       margin-top: 0; }
-    #featured .col-img {
+    .featured-section .col-img {
       margin: 10px 0 10px 0; }
 
-  #contact {
+  .contact-section {
     width: 90%; }
-    #contact .upload {
+    .contact-section .upload {
       margin-left: auto;
       margin-right: auto;
       justify-content: space-between;
       width: 80%; }
-      #contact .upload label {
+      .contact-section .upload label {
         padding-left: 0 !important;
         padding-right: 0 !important;
         font-size: 11px !important; }
-    #contact img {
+    .contact-section img {
       display: none; }
-    #contact form {
+    .contact-section form {
       width: 80%; }
-    #contact .map-info {
+    .contact-section .map-info {
       width: 60% !important; }
-    #contact .map-section {
+    .contact-section .map-section {
       height: 100%; }
 
-  #instagram h2 {
+  .instagram-section h2 {
     font-size: 24px; }
-  #instagram .collection {
+  .instagram-section .collection {
     display: flex;
     flex-direction: column;
     width: 90%; }
-  #instagram .big-col {
+  .instagram-section .big-col {
     display: none; }
-  #instagram .small-col {
+  .instagram-section .small-col {
     justify-content: center; }
-    #instagram .small-col img {
+    .instagram-section .small-col img {
       margin-left: 5px !important;
       margin-right: 0 !important; }
 
-  #home {
+  .home-section {
     height: 900px; }
-    #home .logo-column img {
+    .home-section .logo-column img {
       width: 100%; }
-    #home nav {
+    .home-section nav {
       width: 100%;
       border-bottom: none; }
-      #home nav ul {
+      .home-section nav ul {
         flex-direction: column;
         width: 100%;
         align-items: center; }
-      #home nav li {
+      .home-section nav li {
         border-bottom: 1px solid #f6f6f6;
         padding: 10px 0;
         width: 100%;
         text-align: center; }
-    #home .winner-part img {
+    .home-section .winner-part img {
       display: none; }
-    #home .winner-part .logo-column {
+    .home-section .winner-part .logo-column {
       margin-left: auto;
       margin-right: auto; }
-      #home .winner-part .logo-column img {
+      .home-section .winner-part .logo-column img {
         display: block; }
 
-  #artists {
+  .artists-section {
     width: 90%;
     height: 100%;
     margin-bottom: 20px; }
-    #artists h2 {
+    .artists-section h2 {
       text-align: center;
       font-size: 48px; }
-    #artists .artists-main {
+    .artists-section .artists-main {
       display: flex;
       justify-content: space-evenly;
       flex-wrap: wrap; }
 
-  #awards {
+  .awards-section {
     height: 100%; }
-    #awards .inner-awards {
+    .awards-section .inner-awards {
       background: none;
       height: 100%; }
-    #awards .layer {
+    .awards-section .layer {
       margin-left: auto;
       margin-right: auto;
       flex-wrap: wrap;
       width: 80%;
       padding: 15px 0;
       height: 100%; }
-    #awards .award,
-    #awards .award-middle {
+    .awards-section .award,
+    .awards-section .award-middle {
       width: 100%; }
-    #awards .award-middle {
+    .awards-section .award-middle {
       margin-left: 0; } }
 
 /*# sourceMappingURL=style.css.map */
