@@ -1,7 +1,7 @@
 @import "../helpers/mixins";
 @import "../helpers/variables";
 
-#artists {
+.artists-section {
   @include margin-auto;
 
   height: 627px;

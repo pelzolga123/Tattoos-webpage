@@ -1,7 +1,7 @@
 @import "../helpers/mixins";
 @import "../helpers/variables";
 
-#featured {
+.featured-section {
   @include margin-auto;
 
   width: 1134px;

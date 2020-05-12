@@ -1,7 +1,7 @@
 @import "../helpers/mixins";
 @import "../helpers/variables";
 
-#instagram {
+.instagram-section {
   .collection {
     @include margin-auto;
 

@@ -1,0 +1,32 @@
+{
+  "name": "tattoos-webpage",
+  "version": "1.0.0",
+  "description": "Simple one page website.",
+  "main": "index.html",
+  "dependencies": {
+    "prettier": "^2.0.5",
+    "stylelint": "^13.3.3",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-scss": "^3.17.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pelzolga123/Tattoos-webpage.git"
+  },
+  "keywords": [
+    "HTML",
+    "SASS",
+    "CSS",
+    "VanillaJS"
+  ],
+  "author": "Olga Pelts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pelzolga123/Tattoos-webpage/issues"
+  },
+  "homepage": "https://github.com/pelzolga123/Tattoos-webpage#readme"
+}
