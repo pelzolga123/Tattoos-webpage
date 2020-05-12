@@ -16,10 +16,6 @@
   display: flex;
   justify-content: center;
   align-items: center; }
-  #lightbox.active .close-btn {
-    position: absolute;
-    border: none;
-    cursor: pointer; }
 
 .home-section {
   background: url("../images/home_background.svg") no-repeat;
